@@ -86,6 +86,14 @@ h2{
     text-align: center;
 }
 
+.bouton-lien-animation{
+    transition-property: padding-top;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+}
+
 .bouton-lien{
     background-color: var(--deep-gray);
     padding: 0;
@@ -98,6 +106,11 @@ h2{
     padding: 1rem;
     margin: 0;
 }
+
+.bouton-lien:hover .bouton-lien-animation {
+    padding-top: 0rem;
+}
+
 
 /* Nav */
 
@@ -344,7 +357,6 @@ footer li a{
 .carousel{
     margin-bottom: 4rem;
 }
-
 
 .carousel-indicators{
     z-index: 1;
