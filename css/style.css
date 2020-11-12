@@ -87,11 +87,11 @@ h2{
 }
 
 .bouton-lien-animation{
-    transition-property: padding-top;
+    /* transition-property: padding-top;
     transition-duration: 1s;
     transition-timing-function: ease-in;
-    padding-top: 0rem;
-    padding-bottom: 5rem;
+    padding-top: 0rem; */
+    padding-bottom: 4rem;
 }
 
 .bouton-lien{
@@ -107,10 +107,11 @@ h2{
     margin: 0;
 }
 
-.bouton-lien:hover .bouton-lien-animation {
-    padding-top: 0rem;
+.bouton-lien:hover{
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.747);
+    bottom: .7rem;
+    background-color: var(--red);
 }
-
 
 /* Nav */
 
@@ -306,9 +307,30 @@ header{
     bottom: .3rem;
 }
 
+/* Footer */
+
+.degrade-haut-footer{
+    width: 100%;
+    height: 15rem;
+    background: linear-gradient(to top, black 20%, transparent);
+    position: relative;
+    bottom: -1rem;
+    z-index: -1;
+}
+
 footer {
     background-color: black;
     padding-bottom: 2rem;
+}
+
+.degrade-haut-footer h2{
+    color: ivory;
+    text-align: center;
+}
+
+footer p{
+    color: var(--pale-gray);
+    text-align: center;
 }
 
 footer li a, footer div{
@@ -341,6 +363,12 @@ footer li a{
     position: relative;
     top: 10rem;
     width: 100%;
+}
+
+@media only screen and (max-width: 991px){
+    .blocVideo{
+        display: none;
+    }
 }
 
 .degrade-bas-video-accueil{
