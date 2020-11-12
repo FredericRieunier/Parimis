@@ -88,11 +88,15 @@ h2{
 
 .bouton-lien{
     background-color: var(--deep-gray);
+    padding: 0;
+    border-radius: .5rem;
 }
 
 .bouton-lien p{
     color: white;
     text-align: center;
+    padding: 1rem;
+    margin: 0;
 }
 
 /* Nav */
@@ -200,18 +204,16 @@ select{
 
 /* Menu mobile */
 
-
-
 .menu-container-mobile nav {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     background: transparent;
   }
   
 .menu-container-mobile nav p {
     font-size: 1.6rem;
     padding: 0 1rem;
-    color: var(--deep-gray)
+    color: var(--deep-gray);
 }
 
 #menu-mobile-contenu{
@@ -219,6 +221,7 @@ select{
     position: fixed;
     background-color: black;
     padding: 0 2rem 2rem 2rem;
+    z-index: 2;
 }
 
 .logo-menu-mobile{
@@ -227,7 +230,7 @@ select{
 
 #menu-mobile-contenu a{
     font-size: 2rem;
-    color: var(--deep-gray);
+    color: white;
     font-family: 'Reem Kufi', sans-serif;
 }
 
@@ -254,7 +257,7 @@ select{
 
 /* Masquer le menu mobile */
 @media only screen and (min-width: 992px){
-    .menu-container-mobile, .menu-mobile-contenu {
+    .menu-container-mobile, #menu-mobile-contenu {
         display: none;
     }
 }
@@ -317,7 +320,8 @@ footer li a{
 
 /* Index */
 .header-index{
-    /* margin-bottom: 25rem; */
+    position: relative;
+    z-index: -1;
 }
 
 .blocVideo video{
@@ -339,4 +343,9 @@ footer li a{
 
 .carousel{
     margin-bottom: 4rem;
+}
+
+
+.carousel-indicators{
+    z-index: 1;
 }
