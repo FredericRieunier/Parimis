@@ -1,4 +1,4 @@
-/* Générique */
+/*** Générique ***/
 *,
 *::before,
 *::after {
@@ -15,7 +15,7 @@
     padding: 0;
 }
 
-/* Parties communes */
+/*** Parties communes ***/
 
 body {
   font-size: 1.6rem;
@@ -118,7 +118,6 @@ h2{
 }
 
 /* Nav */
-
 nav {
     width: 100%;
     background: linear-gradient(to bottom, var(--deep-gray), var(--deep-gray) 65%, transparent 95%);
@@ -154,7 +153,6 @@ nav {
 }
 
 /* Menu desktop, intégré avec le composer dropdowns de Bootstrap */
-
 .menu-container{
     padding:0;
     position: absolute;
@@ -365,6 +363,8 @@ footer hr{
     color: var(--light-white);
 }
 
+/*** CSS des différentes pages ***/
+
 /* Index */
 .header-index{
     position: relative;
@@ -401,3 +401,4 @@ footer hr{
 .carousel-indicators{
     z-index: 1;
 }
+
