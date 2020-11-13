@@ -26,6 +26,7 @@ body {
   /* Définition des couleurs de la charte graphique */
   --deep-gray: hsl(0, 0%, 22%);
   --pale-gray: #C2BEBE;
+  --very-pale-gray: #e4e4e4;
   --red: firebrick;
   --light-white: ivory;
 }
@@ -365,7 +366,7 @@ footer hr{
 
 /*** CSS des différentes pages ***/
 
-/* Index */
+/** Index **/
 .header-index{
     position: relative;
     z-index: -1;
@@ -402,3 +403,25 @@ footer hr{
     z-index: 1;
 }
 
+/** Chambres **/
+.blocVideo img{
+    position: relative;
+    top: 10rem;
+    width: 100%;
+}
+
+.fiche-service{
+    background-color: var(--very-pale-gray);
+    border: solid var(--deep-gray) 1px;
+    padding: 0;
+}
+
+.fiche-service p{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.fiche-service div{
+    max-width: 100%;
+    text-align: center;
+}
