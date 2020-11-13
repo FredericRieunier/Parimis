@@ -22,7 +22,7 @@ $(document).click(function(){
 });
 
 // Imprimer la page
-$('#bouton-imprimer').click(function(event){
+$('#bouton-imprimer a').click(function(event){
   event.preventDefault();
   window.print();
 });

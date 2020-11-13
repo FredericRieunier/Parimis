@@ -27,6 +27,7 @@ body {
   --deep-gray: hsl(0, 0%, 22%);
   --pale-gray: #C2BEBE;
   --red: firebrick;
+  --light-white: ivory;
 }
 
 .container-fluid{
@@ -54,9 +55,14 @@ main p{
     margin-bottom: 4rem;
 }
 
-.img-large{
+.img-position{
     text-align: center;
     margin-bottom: 4rem;
+}
+
+.img-enlarge img{
+    width: 100%;
+    max-width: 500px;
 }
 
 hr{
@@ -87,10 +93,6 @@ h2{
 }
 
 .bouton-lien-animation{
-    /* transition-property: padding-top;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-    padding-top: 0rem; */
     padding-bottom: 4rem;
 }
 
@@ -98,6 +100,8 @@ h2{
     background-color: var(--deep-gray);
     padding: 0;
     border-radius: .5rem;
+    transition: .5s all ease;
+    bottom: 0;
 }
 
 .bouton-lien p{
@@ -290,6 +294,7 @@ header{
     height: 100vh;
 }
 
+/* Bouton de réservation */
 .reservation-area-content{
     font-size: 2rem;
     color: var(--pale-gray);
@@ -299,7 +304,9 @@ header{
     max-width: 25rem;
     border-radius: 1rem;
     color: var(--pale-gray);
-    transition: .3s;
+    bottom: 0;
+    transition-property: box-shadow, bottom;
+    transition-duration: .5s;
 }
 
 .reservation-area-content:hover{
@@ -324,7 +331,7 @@ footer {
 }
 
 .degrade-haut-footer h2{
-    color: ivory;
+    color: var(--light-white);
     text-align: center;
 }
 
@@ -334,7 +341,7 @@ footer p{
 }
 
 footer li a, footer div{
-    color: ivory;
+    color: var(--light-white);
     font-size: 1.6rem;
 }
 
@@ -349,8 +356,13 @@ footer li a{
     font-size: 3rem;
 }
 
-.footer-general p{
-    text-align: center;
+footer hr{
+    background-color: var(--light-white);
+    margin-top: 4rem;
+}
+
+#avertissement{
+    color: var(--light-white);
 }
 
 /* Index */
