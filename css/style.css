@@ -414,6 +414,7 @@ footer hr{
     background-color: var(--very-pale-gray);
     border: solid var(--deep-gray) 1px;
     padding: 0;
+    box-shadow: .3rem .3rem .3rem gray;
 }
 
 .fiche-service p{
@@ -425,3 +426,22 @@ footer hr{
     max-width: 100%;
     text-align: center;
 }
+
+.galerie{
+    border: solid var(--deep-gray) 1px;
+    padding: 0;
+    box-shadow: .3rem .3rem .3rem gray;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.galerie img {
+    transition: .5s;
+    padding: 15px;
+}
+
+.galerie img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+} 

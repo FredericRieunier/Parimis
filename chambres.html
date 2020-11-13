@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Lightbox pour avoir une galerie d'images zoomables -->
+    <link href="css/lightbox.min.css" rel="stylesheet" />
 
     <!-- Fontawesome -->
     <script
@@ -265,11 +267,11 @@
 
       <!-- Présentation -->
       <div class="row justify-content-center">
-      <p class="col-10 baseline">
-        De la chambre classique à la suite en passant par la chambre deluxe,
-        savourez un confort sans égal.
-      </p>
-    </div>
+        <p class="col-10 baseline">
+          De la chambre classique à la suite en passant par la chambre deluxe,
+          savourez un confort sans égal.
+        </p>
+      </div>
 
       <section class="container-fluid">
         <h2>Chambre classique</h2>
@@ -279,12 +281,16 @@
             <div class="container">
               <div class="row justify-content-center">
                 <p class="col-md-12 col-lg-6">
-                  Un lit king size ou deux lits jumeaux. Taille de la chambre&nbsp;: 30 à 38&nbsp;m². Capacité&nbsp;: deux adultes. Lit d'enfant disponible sur demande. Salle de bain avec baignoire munie de jets hydromassants. <br>
-                  <span class="tarif-produit"><strong>Tarif&nbsp;:</strong> À partir de 850&nbsp;euros en moyenne par nuit pour cette période
-                  de l'année.</span>
+                  Un lit king size ou deux lits jumeaux. Taille de la
+                  chambre&nbsp;: 30 à 38&nbsp;m². Capacité&nbsp;: deux adultes.
+                  Lit d'enfant disponible sur demande. Salle de bain avec
+                  baignoire munie de jets hydromassants. <br />
+                  <span class="tarif-produit"
+                    ><strong>Tarif&nbsp;:</strong> À partir de 850&nbsp;euros en
+                    moyenne par nuit pour cette période de l'année.</span
+                  >
                 </p>
-                <div
-                  class="col-md-12 col-lg-6 mt-4 mb-4">
+                <div class="col-md-12 col-lg-6 mt-4 mb-4">
                   <img
                     src="img/chambre-8-classique-400.jpg"
                     alt="Photo de chambre classique"
@@ -292,6 +298,54 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="galerie col-11">
+            <a
+              href="img/chambre-7-classique-500.jpg"
+              data-lightbox="chambres-classiques"
+              data-alt="Photo de chambre classique"
+            >
+              <img
+                src="img/chambre-7-classique-250.jpg"
+                alt="Photo de chambre classique"
+              />
+            </a>
+
+            <a
+              href="img/chambre-13-classique-500.jpg"
+              data-lightbox="chambres-classiques"
+              data-alt="Photo de chambre classique"
+            >
+              <img
+                src="img/chambre-13-classique-250.jpg"
+                alt="Photo de chambre classique"
+              />
+            </a>
+            
+            <a
+              href="img/chambre-16-classique-500.jpg"
+              data-lightbox="chambres-classiques"
+              data-alt="Photo de chambre classique"
+            >
+              <img
+                src="img/chambre-16-classique-250.jpg"
+                alt="Photo de chambre classique"
+              />
+            </a>
+
+            <a
+              href="img/chambre-8-classique-500.jpg"
+              data-lightbox="chambres-classiques"
+              data-alt="Photo de chambre classique"
+            >
+              <img
+                src="img/chambre-8-classique-250.jpg"
+                alt="Photo de chambre classique"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -392,10 +446,20 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- Sticky plug in pour le positionnement du menu -->
-    <script src="/js/jquery.sticky.js"></script>
+    <script src="js/jquery.sticky.js"></script>
     <script>
       $(document).ready(function () {
         $("#sticker").sticky({ topSpacing: 0 });
+      });
+    </script>
+
+    <!-- Lightbox pour avoir une galerie d'images zoomables -->
+    <script src="js/lightbox.min.js"></script>
+    <!-- Faire défiler les images de la galerie de façon cyclée et les afficher rapidement au clic -->
+    <script>
+      lightbox.option({
+        resizeDuration: 100,
+        wrapAround: true,
       });
     </script>
 
