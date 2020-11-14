@@ -95,6 +95,7 @@ h2{
 
 .bouton-lien-animation{
     padding-bottom: 4rem;
+    position: relative;
 }
 
 .bouton-lien{
@@ -103,13 +104,20 @@ h2{
     border-radius: .5rem;
     transition: .5s all ease;
     bottom: 0;
+    position: relative;
+    text-align: center;
+}
+
+
+.bouton-60{
+    width: 60%;
 }
 
 .bouton-lien p{
     color: white;
     text-align: center;
     padding: 1rem;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .bouton-lien:hover{
@@ -121,11 +129,11 @@ h2{
 /* Nav */
 nav {
     width: 100%;
-    background: linear-gradient(to bottom, var(--deep-gray), var(--deep-gray) 65%, transparent 95%);
+    background: linear-gradient(to bottom, black, black 65%, transparent 95%);
 }
 
 .row-titre-parimis{
-    background-color: var(--deep-gray);
+    background-color: black;
     padding-top: 2rem;
 }
 
@@ -180,12 +188,14 @@ nav {
 }
 
 .dropdown-menu{
-    background-color: var(--deep-gray);
+    background-color: black;
     font-size: 2rem;
     border-radius: 0;
     border: none;
     top: 3.5rem;
+    width: 100%;
 }
+
 
 .dropdown-item{
     color: var(--pale-gray);
@@ -204,12 +214,20 @@ nav {
 
 select{
     border: none;
+    border-radius: .3rem;
 }
 
 .language{
     text-align: right;
     color: var(--pale-gray);
     font-family: 'Reem Kufi', sans-serif;
+}
+
+.language-mobile{
+    text-align: left;
+    color: white;
+    position: relative;
+    top: 3rem;
 }
 
 /* Masquer le menu desktop */
@@ -415,6 +433,7 @@ footer hr{
     border: solid var(--deep-gray) 1px;
     padding: 0;
     box-shadow: .3rem .3rem .3rem gray;
+    margin-bottom: 4rem;
 }
 
 .fiche-service p{
@@ -427,18 +446,23 @@ footer hr{
     text-align: center;
 }
 
+.fiche-service img{
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
 .galerie{
-    border: solid var(--deep-gray) 1px;
+    border: solid var(--light-white) 2px;
     padding: 0;
-    box-shadow: .3rem .3rem .3rem gray;
-    margin-top: 2rem;
+    /* box-shadow: .3rem .3rem .3rem gray; */
+    margin: 2rem 0 2rem 0;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem .2rem 1rem .2rem;
 }
 
 .galerie img {
     transition: .5s;
-    padding: 15px;
+    padding: 10px;
 }
 
 .galerie img:hover {

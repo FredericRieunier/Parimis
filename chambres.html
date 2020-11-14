@@ -167,7 +167,7 @@
               ><img src="img/logo-parimis.png" alt="Logo de l'hôtel Parimis"
             /></a>
           </li>
-          <li class="nav-item col-1">
+          <li class="nav-item col-2">
             <a class="nav-link" href="chambres.html">Chambres</a>
           </li>
           <li class="nav-item col-1">
@@ -195,7 +195,7 @@
               <a class="dropdown-item" href="avis.html">Avis</a>
             </div>
           </li>
-          <li class="col-4">
+          <li class="col-3">
             <form
               class="form-inline my-2 my-lg-0 justify-content-end"
               id="moteur-recherche"
@@ -207,7 +207,6 @@
                 aria-label="Search"
                 name="zoneRecherche"
               />
-              <button class="btn my-2 my-sm-0" type="submit">Rechercher</button>
             </form>
           </li>
         </ul>
@@ -228,6 +227,13 @@
 
     <!-- Contenu du menu mobile -->
     <div id="menu-mobile-contenu" style="display: none">
+      <div class="language-mobile">
+        Langue&nbsp;:&nbsp;
+        <select name="language" id="language">
+          <option value="french">FR</option>
+          <option value="english">EN</option>
+        </select>
+      </div>
       <div class="logo-menu-mobile">
         <a class="navbar-brand" href="index.html"
           ><img src="img/logo-parimis.png" alt="Logo de l'hôtel Parimis"
@@ -278,19 +284,31 @@
 
         <div class="row justify-content-center">
           <div class="col-11 col-md-10 col-lg-11 fiche-service">
-            <div class="container">
+            <div class="container-fluid">
               <div class="row justify-content-center">
-                <p class="col-md-12 col-lg-6">
-                  Un lit king size ou deux lits jumeaux. Taille de la
-                  chambre&nbsp;: 30 à 38&nbsp;m². Capacité&nbsp;: deux adultes.
-                  Lit d'enfant disponible sur demande. Salle de bain avec
-                  baignoire munie de jets hydromassants. <br />
-                  <span class="tarif-produit"
-                    ><strong>Tarif&nbsp;:</strong> À partir de 850&nbsp;euros en
-                    moyenne par nuit pour cette période de l'année.</span
-                  >
-                </p>
-                <div class="col-md-12 col-lg-6 mt-4 mb-4">
+                <div class="col-md-12 col-lg-6 order-2">
+                  <div class="container">
+                    <div class="row">
+                      <p>
+                        Un lit king size ou deux lits jumeaux. Taille de la
+                        chambre&nbsp;: 30 à 38&nbsp;m². Capacité&nbsp;: deux
+                        adultes. Lit d'enfant disponible sur demande. Salle de
+                        bain avec baignoire munie de jets hydromassants. <br />
+                        <span class="tarif-produit"
+                          ><strong>Tarif&nbsp;:</strong> À partir de
+                          850&nbsp;euros en moyenne par nuit pour cette période
+                          de l'année.</span
+                        >
+                      </p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="bouton-lien bouton-60">
+                        <a href="reservation.html"><p>Réserver</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-4 order-1">
                   <img
                     src="img/chambre-8-classique-400.jpg"
                     alt="Photo de chambre classique"
@@ -298,56 +316,351 @@
                 </div>
               </div>
             </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="galerie col-12">
+                  <a
+                    href="img/chambre-7-classique-500.jpg"
+                    data-lightbox="chambres-classiques"
+                    data-alt="Photo de chambre classique"
+                  >
+                    <img
+                      src="img/chambre-7-classique-250.jpg"
+                      alt="Photo de chambre classique"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-13-classique-500.jpg"
+                    data-lightbox="chambres-classiques"
+                    data-alt="Photo de chambre classique"
+                  >
+                    <img
+                      src="img/chambre-13-classique-250.jpg"
+                      alt="Photo de chambre classique"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-16-classique-500.jpg"
+                    data-lightbox="chambres-classiques"
+                    data-alt="Photo de chambre classique"
+                  >
+                    <img
+                      src="img/chambre-16-classique-250.jpg"
+                      alt="Photo de chambre classique"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-8-classique-500.jpg"
+                    data-lightbox="chambres-classiques"
+                    data-alt="Photo de chambre classique"
+                  >
+                    <img
+                      src="img/chambre-8-classique-250.jpg"
+                      alt="Photo de chambre classique"
+                    />
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
           </div>
         </div>
+
+        
+      </section>
+
+      <hr />
+
+
+      <section class="container-fluid">
+        <h2>Chambre confort</h2>
 
         <div class="row justify-content-center">
-          <div class="galerie col-11">
-            <a
-              href="img/chambre-7-classique-500.jpg"
-              data-lightbox="chambres-classiques"
-              data-alt="Photo de chambre classique"
-            >
-              <img
-                src="img/chambre-7-classique-250.jpg"
-                alt="Photo de chambre classique"
-              />
-            </a>
+          <div class="col-11 col-md-10 col-lg-11 fiche-service">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 order-2">
+                  <div class="container">
+                    <div class="row">
+                      <p>
+                        Un lit king size ou deux lits jumeaux. Taille de la
+                        chambre&nbsp;: 38 à 46&nbsp;m². Capacité&nbsp;: deux
+                        adultes. Lit d'enfant disponible sur demande. Salle de
+                        bain avec baignoire munie de jets hydromassants et douche équipée de ciel de pluie. <br />
+                        <span class="tarif-produit"
+                          ><strong>Tarif&nbsp;:</strong> À partir de
+                          1030&nbsp;euros en moyenne par nuit pour cette période
+                          de l'année.</span
+                        >
+                      </p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="bouton-lien bouton-60">
+                        <a href="reservation.html"><p>Réserver</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-4 order-1">
+                  <img
+                    src="img/chambre-5-confort-400.jpg"
+                    alt="Photo de chambre confort"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="galerie col-12">
+                  <a
+                    href="img/chambre-2-confort-500.jpg"
+                    data-lightbox="chambres-confort"
+                    data-alt="Photo de chambre confort"
+                  >
+                    <img
+                      src="img/chambre-2-confort-250.jpg"
+                      alt="Photo de chambre confort"
+                    />
+                  </a>
 
-            <a
-              href="img/chambre-13-classique-500.jpg"
-              data-lightbox="chambres-classiques"
-              data-alt="Photo de chambre classique"
-            >
-              <img
-                src="img/chambre-13-classique-250.jpg"
-                alt="Photo de chambre classique"
-              />
-            </a>
-            
-            <a
-              href="img/chambre-16-classique-500.jpg"
-              data-lightbox="chambres-classiques"
-              data-alt="Photo de chambre classique"
-            >
-              <img
-                src="img/chambre-16-classique-250.jpg"
-                alt="Photo de chambre classique"
-              />
-            </a>
+                  <a
+                    href="img/chambre-18-500.jpg"
+                    data-lightbox="chambres-confort"
+                    data-alt="Photo de chambre confort"
+                  >
+                    <img
+                      src="img/chambre-18-confort-250.jpg"
+                      alt="Photo de chambre confort"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-5-confort-500.jpg"
+                    data-lightbox="chambres-confort"
+                    data-alt="Photo de chambre confort"
+                  >
+                    <img
+                      src="img/chambre-5-confort-250.jpg"
+                      alt="Photo de chambre confort"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-12-500.jpg"
+                    data-lightbox="chambres-confort"
+                    data-alt="Photo de chambre confort"
+                  >
+                    <img
+                      src="img/chambre-12-confort-250.jpg"
+                      alt="Photo de chambre confort"
+                    />
+                  </a>
+                </div>
+              </div>
 
-            <a
-              href="img/chambre-8-classique-500.jpg"
-              data-lightbox="chambres-classiques"
-              data-alt="Photo de chambre classique"
-            >
-              <img
-                src="img/chambre-8-classique-250.jpg"
-                alt="Photo de chambre classique"
-              />
-            </a>
+            </div>
+
           </div>
         </div>
+
+        
+      </section>
+
+      <hr />
+
+      <section class="container-fluid">
+        <h2>Chambre deluxe</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-11 fiche-service">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 order-2">
+                  <div class="container">
+                    <div class="row">
+                      <p>
+                        Un lit king size ou deux lits jumeaux. Taille de la
+                        chambre&nbsp;: 46 à 50&nbsp;m². Capacité&nbsp;: deux
+                        adultes. Canapé-lit ou lit d'enfant disponible sur demande. Salle de
+                        bain avec baignoire munie de jets hydromassants et douche équipée de ciel de pluie. <br />
+                        <span class="tarif-produit"
+                          ><strong>Tarif&nbsp;:</strong> À partir de
+                          1250&nbsp;euros en moyenne par nuit pour cette période
+                          de l'année.</span
+                        >
+                      </p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="bouton-lien bouton-60">
+                        <a href="reservation.html"><p>Réserver</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-4 order-1">
+                  <img
+                    src="img/chambre-10-deluxe-400.jpg"
+                    alt="Photo de chambre deluxe"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="galerie col-12">
+                  <a
+                  href="img/chambre-15-deluxe-500.jpg"
+                  data-lightbox="chambres-deluxe"
+                  data-alt="Photo de chambre deluxe"
+                >
+                  <img
+                    src="img/chambre-15-deluxe-250.jpg"
+                    alt="Photo de chambre deluxe"
+                  />
+                </a>
+      
+                  <a
+                    href="img/chambre-6-deluxe-500.jpg"
+                    data-lightbox="chambres-deluxe"
+                    data-alt="Photo de chambre deluxe"
+                  >
+                    <img
+                      src="img/chambre-6-deluxe-250.jpg"
+                      alt="Photo de chambre deluxe"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-10-deluxe-500.jpg"
+                    data-lightbox="chambres-deluxe"
+                    data-alt="Photo de chambre deluxe"
+                  >
+                    <img
+                      src="img/chambre-10-deluxe-250.jpg"
+                      alt="Photo de chambre deluxe"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-4-deluxe-500.jpg"
+                    data-lightbox="chambres-deluxe"
+                    data-alt="Photo de chambre deluxe"
+                  >
+                    <img
+                      src="img/chambre-4-deluxe-250.jpg"
+                      alt="Photo de chambre deluxe"
+                    />
+                  </a>
+                 
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        
+      </section>
+
+      <hr />
+
+
+      <section class="container-fluid">
+        <h2>Suite</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-11 fiche-service">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 order-2">
+                  <div class="container">
+                    <div class="row">
+                      <p>
+                        Un lit king size ou deux lits jumeaux. Taille de la
+                        chambre&nbsp;: 50 à 60&nbsp;m². Capacité&nbsp;: deux
+                        adultes. Lit d'enfant disponible sur demande. Salle de
+                        bain avec jacuzzi. <br />
+                        <span class="tarif-produit"
+                          ><strong>Tarif&nbsp;:</strong> À partir de
+                          1550&nbsp;euros en moyenne par nuit pour cette période
+                          de l'année.</span
+                        >
+                      </p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="bouton-lien bouton-60">
+                        <a href="reservation.html"><p>Réserver</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-4 order-1">
+                  <img
+                    src="img/chambre-11-suite-400.jpg"
+                    alt="Photo de suite"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="galerie col-12">
+                  <a
+                    href="img/chambre-3-suite-500.jpg"
+                    data-lightbox="chambres-suite"
+                    data-alt="Photo de suite"
+                  >
+                    <img
+                      src="img/chambre-3-suite-250.jpg"
+                      alt="Photo de suite"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-19-suite-500.jpg"
+                    data-lightbox="chambres-suite"
+                    data-alt="Photo de suite"
+                  >
+                    <img
+                      src="img/chambre-19-suite-250.jpg"
+                      alt="Photo de suite"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-11-suite-500.jpg"
+                    data-lightbox="chambres-suite"
+                    data-alt="Photo de suite"
+                  >
+                    <img
+                      src="img/chambre-11-suite-250.jpg"
+                      alt="Photo de suite"
+                    />
+                  </a>
+      
+                  <a
+                    href="img/chambre-17-suite-500.jpg"
+                    data-lightbox="chambres-suite"
+                    data-alt="Photo de suite"
+                  >
+                    <img
+                      src="img/chambre-17-suite-250.jpg"
+                      alt="Photo de suite"
+                    />
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        
       </section>
 
       <hr />
