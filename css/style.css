@@ -129,7 +129,7 @@ h2{
 /* Nav */
 nav {
     width: 100%;
-    background: linear-gradient(to bottom, black, black 65%, transparent 95%);
+    background: linear-gradient(to bottom, black, black 50%, transparent 95%);
 }
 
 .row-titre-parimis{
@@ -314,21 +314,20 @@ header{
 /* Bouton de réservation */
 .reservation-area-content{
     font-size: 2rem;
-    color: var(--pale-gray);
     font-family: 'Reem Kufi', sans-serif;
-    border: solid 1px rgb(32, 0, 0);
-    background-color: var(--red);
+    border: solid 1px white;
+    background-color: black;
     max-width: 25rem;
     border-radius: 1rem;
-    color: var(--pale-gray);
+    color: white;
     bottom: 0;
     transition-property: box-shadow, bottom;
     transition-duration: .5s;
 }
 
 .reservation-area-content:hover{
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.747);
-    bottom: .3rem;
+    box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.747);
+    bottom: .2rem;
 }
 
 /* Footer */
@@ -457,15 +456,16 @@ footer hr{
     /* box-shadow: .3rem .3rem .3rem gray; */
     margin: 2rem 0 2rem 0;
     text-align: center;
-    padding: 1rem .2rem 1rem .2rem;
+    padding: 1.5rem .2rem 1.5rem .2rem;
 }
 
 .galerie img {
     transition: .5s;
     padding: 10px;
+    filter: grayscale(100%);
 }
 
 .galerie img:hover {
-    filter: grayscale(100%);
+    filter: initial;
     transform: scale(1.1);
 } 
