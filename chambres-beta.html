@@ -25,28 +25,33 @@
     <!-- A MODIFIER -->
     <meta
       name="description"
-      content="L'hôtel cinq étoiles Parimis vous accueille au cœur du 8e arrondissement. Ses chambres, son spa et son restaurant offrent un niveau de prestation rarement égalé."
+      content="De la chambre classique à la suite en passant par la chambre
+    deluxe, savourez un confort sans égal à l'hôtel Parimis."
     />
-    <meta name="keywords" content="hôtel de luxe, Paris 8e, Parimis" />
+    <meta
+      name="keywords"
+      content="chambres deluxe, chambres confort, chambre classique, suite, hôtel de luxe, Parimis"
+    />
 
     <!-- BALISES OG RÉSEAUX SOCIAUX -->
     <meta property="og:site_name" content="Hôtel cinq étoiles Parimis Paris" />
     <meta
       property="og:title"
-      content="Accueil | Hôtel cinq étoiles Paris | spa | Parimis Paris"
+      content="Chambres | Hôtel cinq étoiles Paris | spa | Parimis Paris"
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://fredericrieunier.fr/parimis/index.html"
+      content="https://fredericrieunier.fr/parimis/chambres.html"
     />
     <meta
       property="og:image"
-      content="https://fredericrieunier.fr/parimis/img/monuments-paris-3-250.jpg"
+      content="*** URL DE L'IMAGE DE LA PAGE POUR RESEAUX SOCIAUX ***"
     />
     <meta
       property="og:description"
-      content="L'hôtel cinq étoiles Parimis vous accueille au cœur du 8e arrondissement. Ses chambres, son spa et son restaurant offrent un niveau de prestation rarement égalé."
+      content="De la chambre classique à la suite en passant par la chambre
+    deluxe, savourez un confort sans égal à l'hôtel Parimis."
     />
 
     <!-- Favicons -->
@@ -124,11 +129,11 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>Hôtel 5 étoiles Parimis, Paris</title>
+    <title>Chambres | Hôtel 5 étoiles Parimis, Paris</title>
   </head>
   <body>
-
     <!-- Menu desktop -->
+
     <div class="container-fluid menu-container">
       <div class="row row-titre-parimis">
         <a href="panier.html" class="col-2"
@@ -141,7 +146,7 @@
         </h2>
         <a href="reservation.html"
           ><div class="col-2 pl-3 pr-3 mb-2 reservation-area-content">
-            Réservez votre séjour
+            <i class="fas fa-bed"></i>&nbsp;&nbsp;Réservez votre séjour
           </div></a
         >
 
@@ -161,8 +166,8 @@
               ><img src="img/logo-parimis.png" alt="Logo de l'hôtel Parimis"
             /></a>
           </li>
-          <li class="nav-item col-2">
-            <a class="nav-link" href="chambres.html">Chambres</a>
+          <li class="nav-item col-1">
+            <a class="nav-link" href="suites.html">Suites</a>
           </li>
           <li class="nav-item col-1">
             <a class="nav-link" href="spa.html">Spa</a>
@@ -189,7 +194,7 @@
               <a class="dropdown-item" href="avis.html">Avis</a>
             </div>
           </li>
-          <li class="col-3">
+          <li class="col-4">
             <form
               class="form-inline my-2 my-lg-0 justify-content-end"
               id="moteur-recherche"
@@ -201,6 +206,7 @@
                 aria-label="Search"
                 name="zoneRecherche"
               />
+              <button class="btn my-2 my-sm-0" type="submit">Rechercher</button>
             </form>
           </li>
         </ul>
@@ -220,16 +226,7 @@
     </div>
 
     <!-- Contenu du menu mobile -->
-    <div id="menu-mobile-contenu" style="display: none">
-
-      <div class="language-mobile">
-        Langue&nbsp;:&nbsp;
-        <select name="language" id="language-mobile">
-          <option value="french">FR</option>
-          <option value="english">EN</option>
-        </select>
-      </div>
-      
+    <div id="menu-mobile-contenu">
       <div class="logo-menu-mobile">
         <a class="navbar-brand" href="index.html"
           ><img src="img/logo-parimis.png" alt="Logo de l'hôtel Parimis"
@@ -243,7 +240,7 @@
           <a href="reservation.html" class="menu-mobile-reserver">Réserver</a>
         </li>
         <li><a href="panier.html">Panier</a></li>
-        <li><a href="chambres.html">Chambres</a></li>
+        <li><a href="suites.html">Suites</a></li>
         <li><a href="spa.html">Spa</a></li>
         <li><a href="restaurant.html">Restaurant</a></li>
         <li><a href="acces.html">Accès</a></li>
@@ -254,13 +251,9 @@
         <li><a href="avis.html">Avis</a></li>
       </ul>
     </div>
-    <header class="header-index">
+    <header class="header-chambres">
       <div class="blocVideo">
-        <video poster="img/poster-video-accueil.jpg" autoplay loop muted>
-          <source
-            src="https://www.fourseasons.com/content/dam/fourseasons/video/PAR/PAR_PLP_Ambient.mp4"
-          />
-        </video>
+        <img src="img/chambre-9-1500.jpg" alt="Photo de lit de suite" />
       </div>
     </header>
 
@@ -269,252 +262,28 @@
       <div class="degrade-bas-video-accueil row"></div>
       <h1>Hôtel Parimis, Paris</h1>
 
-      <p class="baseline">Venez voir Paris tel que vous n'osiez le rêver.</p>
+      <p class="baseline">
+        De la chambre classique à la suite en passant par la chambre deluxe,
+        savourez un confort sans égal.
+      </p>
 
-      <!-- Carrousel -->
-
-      <div class="container-fluid">
-        <div class="row">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide offset-sm-1 offset-md-2 offset-lg-3 offset-xl-4 col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleCaptions"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="img/monuments-paris-3-500.jpg"
-                  class="d-block w-100 carousel-img"
-                  alt="Photo de la pyramide du Louvre"
-                />
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="img/spa-3-500.jpg"
-                  class="d-block w-100 carousel-img"
-                  alt="Photo de massage aux pierres chaudes"
-                />
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="img/cuisine-2-500.jpg"
-                  class="d-block w-100 carousel-img"
-                  alt="Photo d'assiette végétarienne'"
-                />
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="img/chambre-2-500.jpg"
-                  class="d-block w-100 carousel-img"
-                  alt="Photo de chambre classique"
-                />
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="img/cuisine-5-500.jpg"
-                  class="d-block w-100 carousel-img"
-                  alt="Photo de cuisinier au travail"
-                />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleCaptions"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleCaptions"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Présentation -->
+      <h2>Chambre classique</h2>
       <div class="row">
-        <p class="offset-1 offset-lg-2 col-10 col-lg-8">
-          Oubliez votre vision de la capitale française. L'hôtel Parimis est
-          l'écrin qui sied le mieux au sublime de Paris. Profitez de nos chambres
-          spacieuses et confortables. Dégustez la cuisine de notre chef étoilé.
-          Détendez-vous dans notre spa. Laissez-vous guider dans un univers où
-          tout n'est que luxe, calme et volupté.
+        <p class="col-12 offset-md-2 col-md-3">
+          Un lit king size ou deux lits jumeaux. <br />
+          À partir de 850 euros en moyenne par nuit pour cette période de
+          l'année.
         </p>
-      </div>
-
-      <hr />
-
-      <!-- chambres -->
-      <h2>chambres</h2>
-      <div class="row">
-        <div class="col-12 img-position">
-          <img
-            src="img/chambre-4-900.jpg"
-            class="img-fluid"
-            alt="Photo de chambre classique"
-          />
+        <div class="col-12 cold-md-5">
+            <img src="img/chambre-8-classique-400.jpg" alt="Photo de chambre classique">
         </div>
       </div>
 
-      <div class="row">
-        <p class="offset-1 offset-lg-2 col-10 col-lg-8 baseline">
-          De la chambre classique à la suite en passant par la chambre
-          deluxe, savourez un confort sans égal.
-        </p>
-      </div>
+      <h2>Chambre confort</h2>
 
-      <div class="row">
-        <div class="col-xl-6 img-position">
-          <img
-            src="img/chambre-5-500.jpg"
-            class="img-fluid"
-            alt="Photo de suite"
-          />
-        </div>
-        <div class="col-xl-6 img-position">
-          <img
-            src="img/chambre-6-500.jpg"
-            class="img-fluid"
-            alt="Photo de chambre deluxe"
-          />
-        </div>
-      </div>
+      <h2>Chambre deluxe</h2>
 
-      <div class="row align-items-center bouton-lien-animation">
-        <div class="bouton-lien offset-3 col-6 offset-md-4 col-md-4">
-          <a href="chambres.html"><p>Tous les hébergements</p></a>
-        </div>
-      </div>
-      <hr />
-
-      <!-- Spa -->
-      <h2>Spa</h2>
-      <div class="row">
-        <div class="col-12 img-position">
-          <img
-            src="img/spa-7-900.jpg"
-            class="img-fluid"
-            alt="Photo de piscine"
-          />
-        </div>
-      </div>
-
-      <div class="row">
-        <p class="offset-1 offset-lg-2 col-10 col-lg-8 baseline">
-          Laissez-nous prendre soin de vous. Massage, gommage, relaxation, à
-          travers notre gamme complète de soins, découvrez un monde où la
-          moiteur le dispute à la douceur.
-        </p>
-      </div>
-
-      <div class="row">
-        <div class="col-xl-6 img-position">
-          <img
-            src="img/spa-8-500.jpg"
-            class="img-fluid"
-            alt="Photo bain relaxant"
-          />
-        </div>
-        <div class="col-xl-6 img-position">
-          <img
-            src="img/spa-9-500.jpg"
-            class="img-fluid"
-            alt="Photo de massage"
-          />
-        </div>
-      </div>
-
-      <div class="row align-items-center bouton-lien-animation">
-        <div class="bouton-lien offset-3 col-6 offset-md-4 col-md-4">
-          <a href="spa.html"><p>Tous nos soins</p></a>
-        </div>
-      </div>
-      <hr />
-
-      <!-- Restaurant -->
-      <h2>Restaurant</h2>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 img-position img-enlarge">
-          <img
-            src="img/cuisine-3-400.jpg"
-            class="img-fluid"
-            alt="Photo de riz aux crevettes thaï"
-          />
-        </div>
-        <div class="col-lg-4 col-md-6 img-position img-enlarge">
-          <img
-            src="img/restaurant-2-400.jpg"
-            class="img-fluid"
-            alt="Photo de salle de restaurant"
-          />
-        </div>
-        <div class="col-lg-4 col-md-12 img-position img-enlarge">
-          <img
-            src="img/cuisine-8-400.jpg"
-            class="img-fluid"
-            alt="Photo de fraises"
-          />
-        </div>
-      </div>
-
-      <div class="row">
-        <p class="offset-1 offset-lg-2 col-10 col-lg-8 baseline">
-          Notre chef sélectionne chaque jour avec soin ses produits et fait
-          appel à toute l'exigence de son équipe pour vous offrir une cuisine
-          qui fait la fierté de notre établissement et lui a permis de conquérir
-          une étoile au guide Michelin.</p> 
-        <p class="offset-1 offset-lg-2 col-10 col-lg-8 baseline">
-          Que vous préfériez un filet de bœuf ou
-          un tartare de saumon, que vous ayez envie d'une petite douceur ou que
-          vous soyez strictement végétarien, notre restaurant saura répondre à
-          vos désirs.
-        </p>
-      </div>
-
-      <div class="row">
-        <div class="col-12 img-position">
-          <img
-            src="img/cuisine-4-900.jpg"
-            class="img-fluid"
-            alt="Photo de chef en cuisine"
-          />
-        </div>
-      </div>
-
-      <div class="row align-items-center bouton-lien-animation">
-        <div class="bouton-lien offset-3 col-6 offset-md-4 col-md-4">
-          <a href="restaurant.html"><p>Toutes nos cartes</p></a>
-        </div>
-      </div>
+      <h2>Suite</h2>
       <div class="degrade-haut-footer row align-items-end">
         <h2 class="col-12">Hôtel Parimis</h2>
       </div>
@@ -568,15 +337,18 @@
       <div class="container">
         <div class="row justify-content-center">
           <p class="col-12 col-lg-8">
-            <a href="qui-sommes-nous.html">Qui&nbsp;sommes-nous ?</a> ●&nbsp;<a href="qui-sommes-nous#newsletter.html">Newsletter</a> ●
-            <a href="recrutement.html">Recrutement</a> ●&nbsp;<a href="mentions-legales.html">Mentions&nbsp;légales</a> ●&nbsp;<a href="conditions-generales-de-vente.html"
+            <a href="qui-sommes-nous.html">Qui&nbsp;sommes-nous ?</a> ●
+            <a href="qui-sommes-nous#newsletter.html">Newsletter</a> ●
+            <a href="recrutement.html">Recrutement</a> ●
+            <a href="mentions-legales.html">Mentions&nbsp;légales</a> ●
+            <a href="conditions-generales-de-vente.html"
               >Conditions&nbsp;générales&nbsp;de&nbsp;vente</a
             >
-            ●&nbsp;<a href="plan-du-site.html">Plan&nbsp;du&nbsp;site</a>
+            ● <a href="plan-du-site.html">Plan&nbsp;du&nbsp;site</a>
           </p>
         </div>
         <div class="row justify-content-center">
-          <p id="bouton-imprimer" class="col-12">
+          <p id="bouton-imprimer col-12">
             <a href="#"><i class="fas fa-print"></i>&nbsp;Imprimer la page</a>
           </p>
         </div>

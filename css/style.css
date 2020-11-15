@@ -27,6 +27,7 @@ body {
   --deep-gray: hsl(0, 0%, 22%);
   --pale-gray: #C2BEBE;
   --very-pale-gray: #e4e4e4;
+  --light-gray: #ebe9e9;
   --red: firebrick;
   --light-white: ivory;
 }
@@ -51,7 +52,7 @@ main{
 }
 
 main p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     margin-bottom: 4rem;
 }
@@ -89,8 +90,14 @@ h2{
 
 h3{
     font-family: 'Reem Kufi', sans-serif;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-top: 1rem;
+}
+
+h4{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: 'Reem Kufi', sans-serif;
 }
 
 .baseline{
@@ -489,6 +496,22 @@ footer hr{
 
 .carte-restau p{
     text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.carte-description{
+    background-color: var(--light-gray);
+}
+.carte-restau-ornement{
+    margin-bottom: 5rem;
+}
+
+.carte-restau h4{
+    color: white;
+    text-shadow: 0 0 2.8rem black;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
 }
 
 .galerie-restau{
