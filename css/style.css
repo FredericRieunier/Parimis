@@ -474,7 +474,7 @@ footer hr{
 .galerie img {
     transition: .5s;
     padding: 10px;
-    filter: grayscale(100%);
+    filter: grayscale();
 }
 
 .galerie img:hover {
@@ -506,8 +506,9 @@ footer hr{
 }
 
 .carte-restau-prix{
-    font-size: 1.2rem;
+    font-size: 1.1rem !important;
     font-style: italic;
+    color: var(--deep-gray);
 }
 
 .carte-description{
