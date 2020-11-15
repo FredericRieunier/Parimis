@@ -484,6 +484,11 @@ footer hr{
 
 /* Restaurant */
 
+.restau-horaires{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
 .carte-restau{
     border: thick double white;
 }
@@ -495,9 +500,14 @@ footer hr{
 }
 
 .carte-restau p{
-    text-align: center;
+    text-align: left;
     margin-top: .5rem;
     margin-bottom: .5rem;
+}
+
+.carte-restau-prix{
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .carte-description{
