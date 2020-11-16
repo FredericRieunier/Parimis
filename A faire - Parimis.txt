@@ -1,0 +1,174 @@
+Postuler chez Spareka
+
+Soin Détente–  fiche soino
+Soin Découverte–  fiche soino
+Soin Relaxant –  fiche soino
+Soin Plaisir–  fiche soino
+Soin Evasion–  fiche soin
+
+file:///C:/Users/Utilisateur/Downloads/brochure_soin_spa_dec2018.pdf
+file:///C:/Users/Utilisateur/Downloads/Carte-des-soins-fran%C3%A7ais-fiche-tarif.pdf
+
+
+*** JS
+Des boutons pour toggler du contenu (cartes du restau, par ex)
+
+*** Index :
+voir si sous-domaine pour l'adresse pour les balises og
+og:url
+
+
+
+relire cahier des charges
+
+
+Passer au W3C
+img réseaux sociaux og
+
+Actualiser favicon
+
+*** Questions Numa
+- Qd je me connecte sur le FTP (sans sftp) message qui dit que le certificat du serveur est inconnu.
+
+
+- "le tarif indicatif pour une nuit à la période actuelle."
+Ecq ça veut dire qu'il faut avoir un tarif qui s'affiche de manière variable selon la période de l'année ?
+- Boutons de partage : ça doit partager le contenu ciblé sur la page de l'internaute ? Ou un simple bouton vers le compte Parimis du réseau social voulu ?
+Oui, un simple bouton suffit.
+
+
+*** Charte graphique
+
+- fond blanc / gris foncé / textures variées comme ici :
+https://www.lareserve-paris.com/fr/
+- menu gris foncé/bordeau foncé / + rouge clair (mais pas flashy)
+- ombre sous le menu (en permanence ? Seulement en haut de page puis coupure nette ?)
+- Typo : noir et blanc + une autre couleur (gold ? ocre ?), comme ici une sorte de beige :
+https://www.mandarinoriental.fr/paris/place-vendome/luxury-hotel
+
+*** RESPONSIVE *** 
+Bootstrap :
+col 	576
+sm	720
+md	992
+lg	1200
+xl	au-delà
+
+
+col jusqu'à 768
+md : 768 et plus
+lg 992 et plus
+
+
+
+ 
+
+*** George V (accueil) ***
+Mobile jusqu'à 700 inclus
+Tablette jusqu'à 960 inclus
+
+*** Architecture menu ***
+- Chambres (hébergement)
+- Spa
+- Restaurant
+
+- Plus :
+	° Accès
+	° Evénements
+	° Contact
+	° Presse
+	° Actualité
+	° Avis
+	
+
+- Recherche
+- Multilingue
+
+header
+- Panier
+
+Footer : 
+	° Liens partage
+	° Imprimer la page
+	° Qui sommes-nous ? + Abonnement newsletter (avec une ancre pr éventuellement linker depuis d'autres pages)
+	° Recrutement
+	° Mentions légales
+	° CGV
+	° Plan du site
+
+Fav icon à créer et intégrer
+
+
+
+Typo envisageables :
+Reem Kufi
+Red Hat Display
+Passion One
+Niconne
+
+Typo :
+Menu : Reem Kufi
+Baseline : Niconne
+Inter : Sedan SC
+
+
+*** EN PLUS
+
+- jeux d'animation avec le curseur
+- Agrandir le carrousel
+- système de vérification de la période de l'année en JS pour afficher un tarif adapté (en saison ou hors saison), qui indiquerait : "A la date du [date d'affichage de la page], le prix correspond à un tarif hors saison/pleine saison de : [prix]
+- sur le carrousel, effet slider au doigt de portable
+- Effets au survol sympa, avec image linkées, texte par-dessus et images en fond qui deviennent flou, sombres et ternes comme ici :
+https://www.hotellutetia.com/fr
+- overlay sur page d'accueil avec avertissement sur les conditions sanitaires ? (à changer qd les mesures évolueront)
+- ajouter du paralaxe, comme ici :
+https://www.ritzparis.com/fr-FR
+
+*** IDEES DIVERSES ***
+
+*** Accueil
+Cf :
+https://www.fourseasons.com/content/dam/fourseasons/video/PAR/PAR_PLP_Ambient.mp4
+https://www.fourseasons.com/fr/paris/
+
+https://www.mandarinoriental.fr/paris/place-vendome/luxury-hotel
+
+- Avoir des sections en pur noir et blanc... Avec couleurs au hover ?
+
+- Autres Parimis :
+http://parimis.hotel.free.fr/spa.html
+https://hotel-parimis.herkatlynda.fr/
+parimis.jane-et-bernie.fr
+parimis.damiennoel.fr
+parimis.florianmazelier.fr
+
+- Apprendre à gérer sous-domaine en parimis.fredericrieunier.fr
+
+° Noms des pages présentes à l'accueil : 
+index.html
+chambres.html
+spa.html
+restaurant.html
+acces.html
+evenements.html
+contact.html
+presse.html
+actualite.html
+avis.html
+qui-sommes-nous.html
+qui-sommes-nous#newsletter.html
+recrutement.html
+mentions-legales.html
+conditions-generales-de-vente.html
+panier.html
+reservation.html
+
+
+Bugs :
+- revoir degrade-bas-video-accueil pour qu'il soit plus épais
+- jquery sticky bloqué sur l'index sauf qd la page est ouverte avec live server.
+Tenter sur fredericrieunier.fr
+
+* sftp
+fournir certificat
+voir cmt obtenir une clé d'authentification (qu'on ajoute ds Filezilla)

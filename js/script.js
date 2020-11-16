@@ -35,3 +35,8 @@ $('#moteur-recherche').submit(function(event){
     alert('Veuillez entrer une recherche.');
   }
 });
+
+// Toggle sur les fiches de soins du spa
+$('.spa-fiche-toggle').click(function(){
+  $('.spa-fiche-contenu').slideToggle();
+});
