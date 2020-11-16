@@ -530,6 +530,7 @@ footer hr{
 
 .carte-description{
     background-color: var(--light-gray);
+    margin: 2rem;
 }
 .carte-restau-ornement{
     margin-bottom: 5rem;
