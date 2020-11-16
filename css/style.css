@@ -491,7 +491,7 @@ footer hr{
 .galerie img {
     transition: .5s;
     padding: 10px;
-    filter: grayscale();
+    filter: grayscale(70%);
 }
 
 .galerie img:hover {
