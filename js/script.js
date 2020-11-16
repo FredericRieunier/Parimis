@@ -36,7 +36,23 @@ $('#moteur-recherche').submit(function(event){
   }
 });
 
-// Toggle sur les fiches de soins du spa
-$('.spa-fiche-toggle').click(function(){
-  $('.spa-fiche-contenu').slideToggle();
-});
+/* Création d'une fonction toggle sur les fiches de soins du spa, qui :
+  - affiche ou masque la fiche complète
+  - change le lien de "Voir la fiche complète" en "Masquer la fiche" et vice versa
+*/
+function toggleSpa(fiche, toggled){
+  toggled.click(function(){
+    if(fiche.hasClass('toggleActivated')){
+      fiche.slideUp();
+      fiche.removeClass('toggleActivated');
+      toggled.text('Voir la fiche complète');
+    } else{
+      fiche.slideDown();
+      fiche.addClass('toggleActivated');
+      toggled.text('Masquer la fiche');
+    }
+  });
+}
+
+toggleSpa($('.spa-fiche-contenu1'), $('.spa-fiche-toggle1'));
+

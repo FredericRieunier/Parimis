@@ -549,6 +549,7 @@ footer hr{
     border: none;
 }
 
+/* Spa */
 .spa-fiche-generale{
     background: linear-gradient(to right, var(--pale-gray), var(--light-white));
     border-radius: 1rem;
@@ -565,15 +566,15 @@ footer hr{
     color: var(--deep-gray);
 }
 
-.spa-fiche-toggle{
+.spa-fiche-toggle1{
     cursor: pointer;
 }
 
-.spa-fiche-toggle:hover{
+.spa-fiche-toggle1:hover{
     color: var(--red);
 }
 
-.spa-fiche-contenu{
+.spa-fiche-contenu1{
     display: none;
 }
 
