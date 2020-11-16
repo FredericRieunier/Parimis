@@ -142,12 +142,12 @@ h4{
 /* Nav */
 nav {
     width: 100%;
-    background: linear-gradient(to bottom, black, black 50%, transparent 95%);
+    background: linear-gradient(to bottom, black, black 60%, transparent 95%);
 }
 
 .row-titre-parimis{
     background-color: black;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .row-titre-parimis a{
@@ -156,14 +156,21 @@ nav {
 }
 
 .panier{
+    text-align: right;
+}
+
+.panier a{
     font-family: 'Reem Kufi', sans-serif;
-    padding-left: 2rem;
+    text-align: right;
 }
 
 .titre-parimis{
     font-family: 'Cinzel', serif;
     text-align: center;
     font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
 }
 
 .titre-parimis a{
@@ -194,6 +201,10 @@ nav {
     display:block;
 }
 
+.dropdown:hover{
+    background-color: black;
+}
+
 .nav-item{
     font-size: 2.4rem;
     text-align: center;
@@ -205,7 +216,7 @@ nav {
     font-size: 2rem;
     border-radius: 0;
     border: none;
-    top: 3.5rem;
+    top: 3.3rem;
     width: 100%;
 }
 
@@ -215,7 +226,7 @@ nav {
 }
 
 .dropdown-item:hover{
-    background-color: var(--deep-gray);
+    background-color: black;
     color: var(--red);
 }
 
@@ -231,9 +242,9 @@ select{
 }
 
 .language{
-    text-align: right;
     color: var(--pale-gray);
     font-family: 'Reem Kufi', sans-serif;
+    padding-right: 0;
 }
 
 .language-mobile{
@@ -336,11 +347,17 @@ header{
     bottom: 0;
     transition-property: box-shadow, bottom;
     transition-duration: .5s;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.reservation-area-content p{
+    text-align: center;
 }
 
 .reservation-area-content:hover{
     box-shadow: 0 .5rem .5rem var(--red);
-    bottom: .2rem;
+    bottom: .3rem;
 }
 
 /* Footer */
