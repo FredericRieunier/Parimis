@@ -566,15 +566,15 @@ footer hr{
     color: var(--deep-gray);
 }
 
-.spa-fiche-toggle1{
+.spa-fiche-toggle1, .spa-fiche-toggle2, .spa-fiche-toggle3, .spa-fiche-toggle4, .spa-fiche-toggle5{
     cursor: pointer;
 }
 
-.spa-fiche-toggle1:hover{
+.spa-fiche-toggle1:hover, .spa-fiche-toggle2:hover, .spa-fiche-toggle3:hover, .spa-fiche-toggle4:hover, .spa-fiche-toggle5:hover{
     color: var(--red);
 }
 
-.spa-fiche-contenu1{
+.spa-fiche-contenu1, .spa-fiche-contenu2, .spa-fiche-contenu3, .spa-fiche-contenu4, .spa-fiche-contenu5{
     display: none;
 }
 

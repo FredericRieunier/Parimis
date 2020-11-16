@@ -55,4 +55,8 @@ function toggleSpa(fiche, toggled){
 }
 
 toggleSpa($('.spa-fiche-contenu1'), $('.spa-fiche-toggle1'));
+toggleSpa($('.spa-fiche-contenu2'), $('.spa-fiche-toggle2'));
+toggleSpa($('.spa-fiche-contenu3'), $('.spa-fiche-toggle3'));
+toggleSpa($('.spa-fiche-contenu4'), $('.spa-fiche-toggle4'));
+toggleSpa($('.spa-fiche-contenu5'), $('.spa-fiche-toggle5'));
 
