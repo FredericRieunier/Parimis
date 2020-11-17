@@ -578,9 +578,12 @@ footer hr{
     display: none;
 }
 
-
-
 .spa-fiche-generale li{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.6rem;
+}
+
+.resa-zone p{
+    margin-bottom: .5rem;
+    margin-top: 0;
 }
