@@ -283,6 +283,10 @@
 
       <!-- 
         Réserver une chambre
+            Prénom
+            Nom
+            Mail
+            Confirmez votre mail
             Calendrier
             Nombre de personnes
             Type de chambre
@@ -302,142 +306,225 @@
             Bouton d'envoi
      -->
 
-     <section class="container-fluid">
-      <h2>Chambre classique</h2>
+      <section class="container-fluid">
+        <h2>Réserver une chambre</h2>
 
-      <div class="row justify-content-center">
-        <div class="col-11 col-md-10 col-lg-11 fiche-service">
-          <div class="container-fluid">
-            <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-6 order-2">
-                <div class="container">
-                  <div class="row">
-                    <form class="resa-zone" action="traitement.php" method="post">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-11 fiche-service resa-background">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 order-2">
+                  <div class="container">
+                    <div class="row">
+                      <form
+                        class="resa-zone"
+                        id="id-resa-form"
+                      >
+                        <!-- Prénom -->
+                        <p>
+                          <label for="prenom">Votre prénom</label><br />
+                          <input
+                            type="text"
+                            name="prenom"
+                            id="prenom"
+                            value=""
+                            maxlength=""
+                          />
+                        </p>
 
-                      <!-- Nombre de personnes -->
-                      <p>
-                        <label for="nombre-personnes">Nombre de personnes</label>
-                        <select name="name-nombre-personnes" id="id-nombre-personnes">
+                        <!-- Nom -->
+                        <p>
+                          <label for="nom">Votre nom</label><br />
+                          <input
+                            type="text"
+                            name="nom"
+                            id="nom"
+                            value=""
+                            maxlength=""
+                          />
+                        </p>
+
+                        <!-- Mail -->
+                        <p>
+                          <label for="mail">Votre adresse e-mail</label><br />
+                          <input
+                            type="text"
+                            name="mail"
+                            id="mail"
+                            value=""
+                            maxlength=""
+                          />
+                        </p>
+
+                        <!-- Confirmation du mail -->
+                        <p>
+                          <label for="mail-confirmation"
+                            >Confirmez votre adresse e-mail</label
+                          ><br />
+                          <input
+                            type="text"
+                            name="mail-confirmation"
+                            id="mail-confirmation"
+                            value=""
+                            maxlength=""
+                          />
+                        </p>
+
+                        <!-- Nombre de personnes -->
+                        <p>
+                          <label for="nombre-personnes"
+                            >Nombre de personnes</label
+                          >
+                          <select
+                            name="name-nombre-personnes"
+                            id="id-nombre-personnes"
+                          >
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </p>
+
+                        <!-- Nombre de chambres -->
+                        <p>
+                          <label for="nombre-personnes"
+                            >Nombre de chambres</label
+                          >
+                          <select
+                            name="name-nombre-chambres"
+                            id="id-nombre-chambres"
+                          >
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                        </select>
-                      </p>
+                          </select>
+                        </p>
 
-                      <!-- Nombre de chambres -->
-                      <p>
-                        <label for="nombre-personnes">Nombre de chambres</label>
-                        <select name="name-nombre-chambres" id="id-nombre-chambres">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                      </p>
-
-                      <!-- Type de chambre -->
-                      <p>
-                        <label for="type-chambre">Type de chambre</label>
-                        <select name="name-type-chambre" id="id-type-chambre">
-                            <option value="chambre-classique">Chambre classique</option>
-                            <option value="chambre-confort">Chambre confort</option>
-                            <option value="chambre-deluxe">Chambre deluxe</option>
+                        <!-- Type de chambre -->
+                        <p>
+                          <label for="type-chambre">Type de chambre</label>
+                          <select name="name-type-chambre" id="id-type-chambre">
+                            <option value="chambre-classique">
+                              Chambre classique
+                            </option>
+                            <option value="chambre-confort">
+                              Chambre confort
+                            </option>
+                            <option value="chambre-deluxe">
+                              Chambre deluxe
+                            </option>
                             <option value="suite">Suite</option>
-                        </select>
-                      </p>
+                          </select>
+                        </p>
 
-                      <!-- Dates -->
-                      <label for="from">Du</label>
-                      <input name="start" type="text" id="from" />
-                      <label for="to">au</label>
-                      <input name="end" type="text" id="to" />
+                        <!-- Dates -->
+                        <p>
+                          <label for="from">Du</label>
+                          <input name="start" type="text" id="from" />
+                          <label for="to">au</label>
+                          <input name="end" type="text" id="to" />
+                        </p>
 
+                        <!-- Message -->
+                        <p>
+                          <label for="message"
+                            >Votre message
+                            <span class="optionnel">(optionnel)</span></label
+                          ><br />
+                          <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="5"
+                          ></textarea>
+                        </p>
 
-                    </form>
-
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="bouton-lien bouton-60">
-                      <a href="reservation.html"><p>Réserver</p></a>
+                        <!-- Bouton de validation -->
+                        <p>
+                          <input
+                            type="submit"
+                            id="idSubmitReservationChambre"
+                            name="submit"
+                            value="Valider"
+                          />
+                        </p>
+                      </form>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="bouton-lien bouton-60">
+                        <a href="reservation.html"><p>Réserver</p></a>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-4 order-1">
+                  <img
+                    src="img/chambre-8-classique-400.jpg"
+                    alt="Photo de chambre classique"
+                  />
+                </div>
               </div>
-              <div class="col-md-12 col-lg-6 mt-4 mb-4 order-1">
-                <img
-                  src="img/chambre-8-classique-400.jpg"
-                  alt="Photo de chambre classique"
-                />
+            </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="galerie col-12">
+                  <a
+                    href="img/chambre-7-classique-500.jpg"
+                    data-lightbox="chambres-classiques"
+                    data-alt="Photo de chambre classique"
+                  >
+                    <img
+                      src="img/chambre-7-classique-250.jpg"
+                      alt="Photo de chambre classique"
+                    />
+                  </a>
+
+                  <a
+                    href="img/chambre-13-classique-500.jpg"
+                    data-lightbox="chambres-classiques"
+                    data-alt="Photo de chambre classique"
+                  >
+                    <img
+                      src="img/chambre-13-classique-250.jpg"
+                      alt="Photo de chambre classique"
+                    />
+                  </a>
+
+                  <a
+                    href="img/chambre-16-classique-500.jpg"
+                    data-lightbox="chambres-classiques"
+                    data-alt="Photo de chambre classique"
+                  >
+                    <img
+                      src="img/chambre-16-classique-250.jpg"
+                      alt="Photo de chambre classique"
+                    />
+                  </a>
+
+                  <a
+                    href="img/chambre-8-classique-500.jpg"
+                    data-lightbox="chambres-classiques"
+                    data-alt="Photo de chambre classique"
+                  >
+                    <img
+                      src="img/chambre-8-classique-250.jpg"
+                      alt="Photo de chambre classique"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="galerie col-12">
-                <a
-                  href="img/chambre-7-classique-500.jpg"
-                  data-lightbox="chambres-classiques"
-                  data-alt="Photo de chambre classique"
-                >
-                  <img
-                    src="img/chambre-7-classique-250.jpg"
-                    alt="Photo de chambre classique"
-                  />
-                </a>
-    
-                <a
-                  href="img/chambre-13-classique-500.jpg"
-                  data-lightbox="chambres-classiques"
-                  data-alt="Photo de chambre classique"
-                >
-                  <img
-                    src="img/chambre-13-classique-250.jpg"
-                    alt="Photo de chambre classique"
-                  />
-                </a>
-    
-                <a
-                  href="img/chambre-16-classique-500.jpg"
-                  data-lightbox="chambres-classiques"
-                  data-alt="Photo de chambre classique"
-                >
-                  <img
-                    src="img/chambre-16-classique-250.jpg"
-                    alt="Photo de chambre classique"
-                  />
-                </a>
-    
-                <a
-                  href="img/chambre-8-classique-500.jpg"
-                  data-lightbox="chambres-classiques"
-                  data-alt="Photo de chambre classique"
-                >
-                  <img
-                    src="img/chambre-8-classique-250.jpg"
-                    alt="Photo de chambre classique"
-                  />
-                </a>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-      </div>
-
-      
-    </section>
-
-    <hr />
-      
+      </section>
 
       <hr />
 
- 
-
+      <hr />
 
       <div class="degrade-haut-footer row align-items-end">
         <h2 class="col-12">Hôtel Parimis</h2>

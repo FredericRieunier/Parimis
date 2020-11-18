@@ -583,6 +583,11 @@ footer hr{
     font-size: 1.6rem;
 }
 
+.resa-background{
+    background: linear-gradient(to right, transparent, gray), url('../img/chambre-6-deluxe-250.jpg');
+    background-repeat: no-repeat;
+}
+
 .resa-zone p{
     margin-bottom: .5rem;
     margin-top: 0;
