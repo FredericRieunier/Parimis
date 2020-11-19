@@ -583,12 +583,26 @@ footer hr{
     font-size: 1.6rem;
 }
 
+/* Réservation */
 .resa-background{
-    background: linear-gradient(to right, transparent, gray), url('../img/chambre-6-deluxe-250.jpg');
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, var(--pale-gray), var(--light-white));
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem .5rem gray;
+}
+
+.resa-zone{
+    padding: 4rem;
 }
 
 .resa-zone p{
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
     margin-top: 0;
+}
+
+.bad-mail-confirmation{
+    background-color: rgba(212, 51, 51, 0.671);
+}
+
+#from, #to{
+    width: 9rem;
 }

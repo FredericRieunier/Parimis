@@ -27,31 +27,31 @@
     <!-- A MODIFIER -->
     <meta
       name="description"
-      content="Réservez votre séjour à l'hôtel Parimis, au cœur du 8e arrondissement. Ses chambres, son spa et son restaurant offrent un niveau de prestation rarement égalé."
+      content="Réservez votre table au restaurant du Parimis, au cœur du 8e arrondissement. Filet de bœuf, tartare de saumon ou menu végétarien, il répondra à tous vos désirs."
     />
     <meta
       name="keywords"
-      content="réservation hôtel Parimis, réserver hôtel Parimis, réservation hôtel de luxe Paris, réserver hôtel de luxe Paris, hôtel de luxe, Parimis"
+      content="réservation restaurant Parimis, réserver restaurant Parimis, réservation restaurant de luxe Paris, réserver restaurant de luxe Paris"
     />
 
     <!-- BALISES OG RÉSEAUX SOCIAUX -->
     <meta property="og:site_name" content="Hôtel cinq étoiles Parimis Paris" />
     <meta
       property="og:title"
-      content="Réservation | Hôtel cinq étoiles Paris | spa | Parimis Paris"
+      content="Réservation table restaurant | Hôtel cinq étoiles Paris | spa | Parimis Paris"
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://hotel-parimis.fredericrieunier.fr/reservation.html"
+      content="https://hotel-parimis.fredericrieunier.fr/reservation-table.html"
     />
     <meta
       property="og:image"
-      content="https://hotel-parimis.fredericrieunier.fr/img/chambre-15-deluxe-250.jpg"
+      content="https://hotel-parimis.fredericrieunier.fr/img/cuisine-6-brasserie-250.jpg"
     />
     <meta
       property="og:description"
-      content="Réservez votre séjour à l'hôtel Parimis, au cœur du 8e arrondissement. Ses chambres, son spa et son restaurant offrent un niveau de prestation rarement égalé."
+      content="Réservez votre table au restaurant du Parimis, au cœur du 8e arrondissement. Filet de bœuf, tartare de saumon ou menu végétarien, il répondra à tous vos désirs."
     />
 
     <!-- Favicons -->
@@ -129,7 +129,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>Réservation de chambre | Hôtel 5 étoiles Parimis, Paris</title>
+    <title>Réservation de table | Hôtel 5 étoiles Parimis, Paris</title>
   </head>
   <body>
     <!-- Menu desktop -->
@@ -261,8 +261,8 @@
     <header class="header-chambres container-fluid">
       <div class="blocVideo">
         <img
-          src="img/chambre-6-deluxe-1500.jpg"
-          alt="Photo de chambre deluxe"
+          src="img/cuisine-2-brasserie-1500.jpg"
+          alt="Photo d'assiette de brasserie"
         />
       </div>
     </header>
@@ -270,7 +270,7 @@
     <!-- *** Main *** -->
     <main class="container-fluid">
       <div class="degrade-bas-video-accueil row"></div>
-      <h1>Réserver une chambre</h1>
+      <h1>Réserver une table</h1>
 
       <!-- Présentation -->
       <div class="row justify-content-center">
@@ -280,7 +280,32 @@
           besoin d'aide.
         </p>
       </div>
-      
+
+      <!-- 
+        Réserver une chambre
+            Prénom
+            Nom
+            Mail
+            Confirmez votre mail
+            Calendrier
+            Nombre de personnes
+            Type de chambre
+            Message (optionnel)
+            Bouton d'envoi
+
+        Réserver une table au restaurant
+            Calendrier
+            Nombre de personnes
+            Carte (brasserie, dégustation, restaurant)
+            Bouton d'envoi
+
+        Réserver un soin au spa
+            Calendrier
+            Nombre de personnes
+            Type de soin
+            Bouton d'envoi
+     -->
+
       <section class="container-fluid">
         <h2>À quelques clics du rêve</h2>
 
@@ -359,37 +384,15 @@
                           </select>
                         </p>
 
-                        <!-- Nombre de chambres -->
+                        <!-- Type de carte -->
                         <p>
-                          <label for="id-nombre-chambres"
-                            >Nombre de chambres&nbsp;:</label
+                          <label for="id-type-chambre"
+                            >Choisissez votre carte&nbsp;:</label
                           >
-                          <select
-                            name="name-nombre-chambres"
-                            id="id-nombre-chambres"
-                          >
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                        </p>
-
-                        <!-- Type de chambre -->
-                        <p>
-                          <label for="id-type-chambre">Type de chambre&nbsp;:</label>
                           <select name="name-type-chambre" id="id-type-chambre">
-                            <option value="chambre-classique">
-                              Chambre classique
-                            </option>
-                            <option value="chambre-confort">
-                              Chambre confort
-                            </option>
-                            <option value="chambre-deluxe">
-                              Chambre deluxe
-                            </option>
-                            <option value="suite">Suite</option>
+                            <option value="chambre-classique">Brasserie</option>
+                            <option value="chambre-confort">Dégustation</option>
+                            <option value="chambre-deluxe">Restaurant</option>
                           </select>
                         </p>
 
@@ -438,55 +441,44 @@
                         id="carouselExampleCaptions"
                         data-ride="carousel"
                       >
-                        <!-- <ol class="carousel-indicators">
-                          <li
-                            data-target="#carouselExampleCaptions"
-                            data-slide-to="0"
-                            class="active"
-                          ></li>
-                          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                        </ol> -->
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img
-                              src="img/chambre-18-500.jpg"
+                              src="img/cuisine-3-restaurant-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de riz aux crevettes"
                             />
                           </div>
 
                           <div class="carousel-item">
                             <img
-                              src="img/chambre-10-deluxe-500.jpg"
+                              src="img/cuisine-4-restaurant-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de chef en cuisine"
                             />
                           </div>
 
                           <div class="carousel-item">
                             <img
-                              src="img/chambre-11-suite-500.jpg"
+                              src="img/cuisine-6-brasserie-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de paupiettes de veau"
                             />
                           </div>
 
                           <div class="carousel-item">
                             <img
-                              src="img/chambre-2-500.jpg"
+                              src="img/restaurant-degustation-1-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de tasse de thé"
                             />
                           </div>
 
                           <div class="carousel-item">
                             <img
-                              src="img/chambre-17-suite-500.jpg"
+                              src="img/restaurant-2-brasserie-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de salle de restaurant"
                             />
                           </div>
                         </div>

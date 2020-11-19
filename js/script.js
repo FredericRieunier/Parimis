@@ -128,8 +128,6 @@ var dates = $("#from, #to").datepicker({
         } ) );
 
 // Vérifications du formulaire de réservation
-
-// Chambre
 $('#id-resa-form').submit(function(event){
   event.preventDefault();
     console.log($('#id-nombre-personnes').val());
@@ -137,8 +135,25 @@ $('#id-resa-form').submit(function(event){
     if(!$('#prenom').val() || !$('#nom').val() || !$('#mail').val() || !$('#mail-confirmation').val() || $('#id-nombre-personnes option:selected').val() == '0' || $('#id-nombre-chambres option:selected').val() == '0' || !$('#from').val() || !$('#to').val()){  
       alert('Veuillez remplir tous les champs non-optionnels');
     }
-
-/*     if($('#id-nombre-personnes option:selected').val() == '0'){
-      alert('Veuillez remplir tous les champs non-optionnels');
-    } */
 })
+
+// Confirmation de l'adresse e-mail
+$('#mail-confirmation').keyup(function(){
+  if($('#mail').val() != $('#mail-confirmation').val()){
+    $('#mail-confirmation').addClass('bad-mail-confirmation');
+    $('#mail').addClass('bad-mail-confirmation')
+  } else if($('#mail-confirmation').hasClass('bad-mail-confirmation') && $('#mail').hasClass('bad-mail-confirmation')){
+    $('#mail-confirmation').removeClass('bad-mail-confirmation');
+    $('#mail').removeClass('bad-mail-confirmation');
+  }
+});
+
+$('#mail').keyup(function(){
+  if($('#mail').val() != $('#mail-confirmation').val()){
+    $('#mail-confirmation').addClass('bad-mail-confirmation');
+    $('#mail').addClass('bad-mail-confirmation')
+  } else if($('#mail-confirmation').hasClass('bad-mail-confirmation') && $('#mail').hasClass('bad-mail-confirmation')){
+    $('#mail-confirmation').removeClass('bad-mail-confirmation');
+    $('#mail').removeClass('bad-mail-confirmation');
+  }
+});

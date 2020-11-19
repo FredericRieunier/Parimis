@@ -27,31 +27,31 @@
     <!-- A MODIFIER -->
     <meta
       name="description"
-      content="Réservez votre séjour à l'hôtel Parimis, au cœur du 8e arrondissement. Ses chambres, son spa et son restaurant offrent un niveau de prestation rarement égalé."
+      content="Réservez votre soin au spa du Parimis, au cœur du 8e arrondissement. Il vous aidera à vous ressourcer pour accéder à un univers de plénitude et de sérénité."
     />
     <meta
       name="keywords"
-      content="réservation hôtel Parimis, réserver hôtel Parimis, réservation hôtel de luxe Paris, réserver hôtel de luxe Paris, hôtel de luxe, Parimis"
+      content="réservation spa Parimis, réserver spa Parimis, spa de luxe, Parimis"
     />
 
     <!-- BALISES OG RÉSEAUX SOCIAUX -->
     <meta property="og:site_name" content="Hôtel cinq étoiles Parimis Paris" />
     <meta
       property="og:title"
-      content="Réservation | Hôtel cinq étoiles Paris | spa | Parimis Paris"
+      content="Réservation soin spa | Hôtel cinq étoiles Paris | spa | Parimis Paris"
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://hotel-parimis.fredericrieunier.fr/reservation.html"
+      content="https://hotel-parimis.fredericrieunier.fr/reservation-spa.html"
     />
     <meta
       property="og:image"
-      content="https://hotel-parimis.fredericrieunier.fr/img/chambre-15-deluxe-250.jpg"
+      content="https://hotel-parimis.fredericrieunier.fr/img/ *** IMG en 250 ***"
     />
     <meta
       property="og:description"
-      content="Réservez votre séjour à l'hôtel Parimis, au cœur du 8e arrondissement. Ses chambres, son spa et son restaurant offrent un niveau de prestation rarement égalé."
+      content="Réservez votre soin au spa du Parimis, au cœur du 8e arrondissement. Il vous aidera à vous ressourcer pour accéder à un univers de plénitude et de sérénité."
     />
 
     <!-- Favicons -->
@@ -129,7 +129,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>Réservation de chambre | Hôtel 5 étoiles Parimis, Paris</title>
+    <title>Réservation de soin au spa | Hôtel 5 étoiles Parimis, Paris</title>
   </head>
   <body>
     <!-- Menu desktop -->
@@ -261,8 +261,8 @@
     <header class="header-chambres container-fluid">
       <div class="blocVideo">
         <img
-          src="img/chambre-6-deluxe-1500.jpg"
-          alt="Photo de chambre deluxe"
+          src="img/spa-6-1500.jpg"
+          alt="Photo de femme immergée"
         />
       </div>
     </header>
@@ -270,7 +270,7 @@
     <!-- *** Main *** -->
     <main class="container-fluid">
       <div class="degrade-bas-video-accueil row"></div>
-      <h1>Réserver une chambre</h1>
+      <h1>Réserver un soin au spa</h1>
 
       <!-- Présentation -->
       <div class="row justify-content-center">
@@ -280,7 +280,26 @@
           besoin d'aide.
         </p>
       </div>
-      
+
+      <!-- 
+        Réserver une chambre
+            Prénom
+            Nom
+            Mail
+            Confirmez votre mail
+            Calendrier
+            Nombre de personnes
+            Type de chambre
+            Message (optionnel)
+            Bouton d'envoi
+
+        Réserver un soin au spa
+            Calendrier
+            Nombre de personnes
+            Type de soin
+            Bouton d'envoi
+     -->
+
       <section class="container-fluid">
         <h2>À quelques clics du rêve</h2>
 
@@ -359,46 +378,24 @@
                           </select>
                         </p>
 
-                        <!-- Nombre de chambres -->
+                        <!-- Type de carte -->
                         <p>
-                          <label for="id-nombre-chambres"
-                            >Nombre de chambres&nbsp;:</label
+                          <label for="id-type-chambre"
+                            >Choisissez votre soin&nbsp;:</label
                           >
-                          <select
-                            name="name-nombre-chambres"
-                            id="id-nombre-chambres"
-                          >
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                        </p>
-
-                        <!-- Type de chambre -->
-                        <p>
-                          <label for="id-type-chambre">Type de chambre&nbsp;:</label>
                           <select name="name-type-chambre" id="id-type-chambre">
-                            <option value="chambre-classique">
-                              Chambre classique
-                            </option>
-                            <option value="chambre-confort">
-                              Chambre confort
-                            </option>
-                            <option value="chambre-deluxe">
-                              Chambre deluxe
-                            </option>
-                            <option value="suite">Suite</option>
+                            <option value="chambre-classique">Soin détente</option>
+                            <option value="chambre-confort">Soin découverte</option>
+                            <option value="chambre-deluxe">Soin relaxant</option>
+                            <option value="chambre-deluxe">Soin plaisir</option>
+                            <option value="chambre-deluxe">Soin évasion</option>
                           </select>
                         </p>
 
                         <!-- Dates -->
                         <p>
-                          <label for="from">Du&nbsp;:</label>
+                          <label for="from">Le&nbsp;:</label>
                           <input name="start" type="text" id="from" />
-                          <label for="to">au&nbsp;:</label>
-                          <input name="end" type="text" id="to" />
                         </p>
 
                         <!-- Message -->
@@ -438,55 +435,44 @@
                         id="carouselExampleCaptions"
                         data-ride="carousel"
                       >
-                        <!-- <ol class="carousel-indicators">
-                          <li
-                            data-target="#carouselExampleCaptions"
-                            data-slide-to="0"
-                            class="active"
-                          ></li>
-                          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                        </ol> -->
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img
-                              src="img/chambre-18-500.jpg"
+                              src="img/spa-3-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de massage aux pierres chaudes"
                             />
                           </div>
 
                           <div class="carousel-item">
                             <img
-                              src="img/chambre-10-deluxe-500.jpg"
+                              src="img/spa-5-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de masque d'argile"
                             />
                           </div>
 
                           <div class="carousel-item">
                             <img
-                              src="img/chambre-11-suite-500.jpg"
+                              src="img/spa-9-detente-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de massage"
                             />
                           </div>
 
                           <div class="carousel-item">
                             <img
-                              src="img/chambre-2-500.jpg"
+                              src="img/spa-11-decouverte-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de serviette et savon"
                             />
                           </div>
 
                           <div class="carousel-item">
                             <img
-                              src="img/chambre-17-suite-500.jpg"
+                              src="img/spa-13-relaxant-500.jpg"
                               class="d-block w-100 carousel-img"
-                              alt="Photo de chambre"
+                              alt="Photo de femme en peignoir devant un miroir"
                             />
                           </div>
                         </div>
