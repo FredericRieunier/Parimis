@@ -127,12 +127,23 @@ var dates = $("#from, #to").datepicker({
         return datepicker.regional.fr;
         } ) );
 
-// Vérifications du formulaire de réservation
+// Vérifications des formulaires de réservation
+    // Chambres
 $('#id-resa-form').submit(function(event){
   event.preventDefault();
     console.log($('#id-nombre-personnes').val());
   // On vérifie que tous les champs sont remplis.
     if(!$('#prenom').val() || !$('#nom').val() || !$('#mail').val() || !$('#mail-confirmation').val() || $('#id-nombre-personnes option:selected').val() == '0' || $('#id-nombre-chambres option:selected').val() == '0' || !$('#from').val() || !$('#to').val()){  
+      alert('Veuillez remplir tous les champs non-optionnels');
+    }
+})
+
+    // Spa et restaurant
+$('#id-resa-form2').submit(function(event){
+  event.preventDefault();
+    console.log($('#id-nombre-personnes').val());
+  // On vérifie que tous les champs sont remplis.
+    if(!$('#prenom').val() || !$('#nom').val() || !$('#mail').val() || !$('#mail-confirmation').val() || $('#id-nombre-personnes option:selected').val() == '0' || $('#id-nombre-chambres option:selected').val() == '0' || !$('#from').val()){  
       alert('Veuillez remplir tous les champs non-optionnels');
     }
 })
