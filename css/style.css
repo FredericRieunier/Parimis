@@ -355,6 +355,8 @@ header{
 
 .reservation-area-content p{
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
 }
 
 .reservation-area-content:hover{
