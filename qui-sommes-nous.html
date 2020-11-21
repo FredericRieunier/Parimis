@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- *** LINKS *** -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Reem+Kufi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Lightbox pour avoir une galerie d'images zoomables -->
+    <link href="css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/1c094ac9ba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- *** Meta *** -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Frédéric Rieunier" />
+
+    <!-- A MODIFIER -->
+    <meta
+      name="description"
+      content="Installé dans le 8e arrondissement à l'automne 2020, l'hôtel Parimis offre une autre vision du chic à la française, via ses chambres, son restaurant et son spa."
+    />
+    <meta
+      name="keywords"
+      content="hôtel de luxe Paris, Paris 8e arrondissement, spa 8e arrondissement, Paris 8e, Parimis"
+    />
+
+    <!-- BALISES OG RÉSEAUX SOCIAUX -->
+    <meta property="og:site_name" content="Hôtel cinq étoiles Parimis Paris" />
+    <meta
+      property="og:title"
+      content="Qui sommes-nous ? | Hôtel cinq étoiles Paris | spa | Parimis Paris"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://hotel-parimis.fredericrieunier.fr/qui-sommes-nous.html"
+    />
+    <meta
+      property="og:image"
+      content="https://hotel-parimis.fredericrieunier.fr/img/toits-paris-2-500.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Installé dans le 8e arrondissement à l'automne 2020, l'hôtel Parimis offre une autre vision du chic à la française, via ses chambres, son restaurant et son spa."
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Qui sommes-nous&nbsp;? | Hôtel 5 étoiles Parimis, Paris</title>
+  </head>
+  <body>
+    <!-- Menu desktop -->
+    <div class="container-fluid menu-container">
+      <div class="row row-titre-parimis justify-content-center pb-3">
+        <div class="col-2 language">
+          Langue&nbsp;:&nbsp;
+          <select name="language" id="language">
+            <option value="french">FR</option>
+            <option value="english">EN</option>
+          </select>
+        </div>
+
+        <h2 class="col-5 titre-parimis">
+          <a href="index.html">Parimis, hôtel cinq étoiles</a>
+        </h2>
+
+        <div class="col-3 reservation-area-content">
+          <a href="reservation.html"><p>Réservez votre séjour</p></a>
+        </div>
+
+        <p class="col-2 panier">
+          <a href="panier.html"
+            ><i class="fas fa-shopping-basket"></i>&nbsp;&nbsp;Panier</a
+          >
+        </p>
+      </div>
+
+      <nav class="navbar navbar-expand" id="sticker">
+        <ul class="navbar-nav align-items-center row">
+          <li class="nav-item col-2">
+            <a class="navbar-brand" href="index.html"
+              ><img src="img/logo-parimis.png" alt="Logo de l'hôtel Parimis"
+            /></a>
+          </li>
+          <li class="nav-item col-2">
+            <a class="nav-link" href="chambres.html">Chambres</a>
+          </li>
+          <li class="nav-item col-1">
+            <a class="nav-link" href="spa.html">Spa</a>
+          </li>
+          <li class="nav-item col-2">
+            <a class="nav-link" href="restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item dropdown col-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              role="button"
+              >Plus...</a
+            >
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="acces.html">Accès</a>
+              <a class="dropdown-item" href="evenements.html">Événements</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="presse.html">Presse</a>
+              <a class="dropdown-item" href="actualite.html">Actualité</a>
+              <a class="dropdown-item" href="avis.html">Avis</a>
+            </div>
+          </li>
+          <li class="col-3">
+            <form
+              class="form-inline my-2 my-lg-0 justify-content-end"
+              id="moteur-recherche"
+            >
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Entrez votre recherche"
+                aria-label="Search"
+                name="zoneRecherche"
+              />
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Menu mobile -->
+    <!-- Bouton burger -->
+    <div class="container-fluid menu-container-mobile">
+      <div class="row">
+        <nav class="offset-9 offset-sm-10 offset-md-11 mt-5">
+          <a href="#" id="menu">
+            <p><i class="fas fa-bars"></i></p
+          ></a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Contenu du menu mobile -->
+    <div id="menu-mobile-contenu" style="display: none">
+      <div class="language-mobile">
+        Langue&nbsp;:&nbsp;
+        <select name="language" id="language-mobile">
+          <option value="french">FR</option>
+          <option value="english">EN</option>
+        </select>
+      </div>
+      <div class="logo-menu-mobile">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo-parimis.png" alt="Logo de l'hôtel Parimis"
+        /></a>
+      </div>
+      <h2 class="titre-parimis mt-2">
+        <a href="index.html">Parimis, hôtel cinq étoiles, Paris</a>
+      </h2>
+      <ul>
+        <li>
+          <a href="reservation.html" class="menu-mobile-reserver">Réserver</a>
+        </li>
+        <li><a href="panier.html">Panier</a></li>
+        <li><a href="chambres.html">Chambres</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="acces.html">Accès</a></li>
+        <li><a href="evenements.html">Événements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="presse.html">Presse</a></li>
+        <li><a href="actualite.html">Actualité</a></li>
+        <li><a href="avis.html">Avis</a></li>
+      </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="header-chambres container-fluid">
+      <div class="blocVideo">
+        <img src="img/toits-paris-4-1500.jpg" alt="Photo de lit de suite" />
+      </div>
+    </header>
+
+    <!-- *** Main *** -->
+    <main class="container-fluid">
+      <div class="degrade-bas-video-accueil row"></div>
+      <h1>Qui sommes-nous&nbsp;?</h1>
+
+      <!-- Présentation -->
+      <div class="row justify-content-center">
+        <p class="col-10 baseline">
+          Installé dans le 8e arrondissement à l'automne 2020, l'hôtel Parimis
+          offre une autre vision du chic à la française, via ses chambres, son
+          restaurant et son spa.
+        </p>
+      </div>
+
+      <section class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-11 fiche-service qui-sommes-nous">
+            <h2>Une histoire</h2>
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 order-2">
+                  <div class="container">
+                    <div class="row">
+                      <p>
+                        Le Parimis propose une expérience d'exception au cœur de
+                        la Ville Lumière. Il allie héritage et modernité afin de
+                        proposer des services et équipements de qualité
+                        répondant aux attentes d'une clientèle internationale.
+                        L'hôtel propose 184 chambres, dont 47 suites. Parmi ces
+                        suites, huit suites signatures avec un univers distinct
+                        seront disponibles, dont un penthouse bénéficiant d'une
+                        terrasse privative de 74&nbsp;m² avec une vue imprenable
+                        sur la capitale.
+                      </p>
+                      <p>
+                        Ambassadeur de l'art de vivre à la française, l'hôtel
+                        propose une offre de restauration raffinée, riche de son
+                        héritage culinaire, dont les cartes brasserie et
+                        restaurant, supervisé par le chef Patrick Juvet. Il
+                        accueille ses convives sous sa verrière, du
+                        petit-déjeuner au dîner. La carte dégustation offre une
+                        sélection de mignardises pour le dîner et des cocktails
+                        tout au long de la soirée dans une atmosphère jazz
+                        intimiste. Avec 700&nbsp;m² d'espaces dédiés aux
+                        célébrations, l'hôtel Parimis est idéal pour tous les
+                        événements. Cinq sublimes salles de réunion sont
+                        consacrées à l'événementiel, qui peuvent accueillir
+                        jusqu'à 300 personnes. L'établissement propose également
+                        un spa de 700&nbsp;m² dédié au bien-être et au fitness,
+                        et doté d'une piscine de 17&nbsp;m bénéficiant de
+                        lumière naturelle.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-4 order-1">
+                  <img
+                    src="img/paris-monuments-5-500.jpg"
+                    alt="Photo de rosace de Notre-Dame de Paris"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <h2>Un quartier</h2>
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 order-1">
+                  <div class="container">
+                    <div class="row">
+                      <p>
+                        Le Parimis se situe dans l'avenue Montaigne, qui monte
+                        en pente douce vers les Champs-Élysées et est agrémentée
+                        de cours anglaises fermées par des grilles. Elle
+                        présente des différences certaines avec l'avenue des
+                        Champs-Élysées toute proche&nbsp;: elle est moins animée
+                        et davantage tournée vers le luxe, en particulier vers
+                        la haute couture.
+                      </p>
+                      <p>
+                        Les boutiques Louis Vuitton et Dior côtoient des
+                        restaurants de prestige, comme le Bozen Iéna ou le
+                        Clarence. La pâtisserie Cyril Lignac - Chaillot saura
+                        quant à elle flatter vos papilles le temps d'un délice
+                        sucré.
+                      </p>
+                      <p>
+                        De hauts-lieux touristiques parisiens se trouvent aux
+                        alentours&nbsp;: la tour Eiffel, les jardins du
+                        Trocadéro, la Cité de l'architecture et du patrimoine ou
+                        encore le musée du quai Branly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-4 order-2">
+                  <img
+                    src="img/toits-paris-2-500.jpg"
+                    alt="Vue des toits de Paris"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <h2>Une architecture</h2>
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 order-2">
+                  <div class="container">
+                    <div class="row">
+                      <p>
+                        «&nbsp;Le Parimis est un lieu d'exception, un
+                        établissement légendaire. Pour en faire un hôtel du 21e
+                        siècle, les éléments d'architecture Art déco et Art
+                        nouveau d'époque ont été mariés à un design
+                        contemporain.&nbsp;», explique l'architecte Jean-Michel
+                        Wilmotte, qui a orchestré son édification.
+                      </p>
+                      <p>
+                        L'objectif est clair&nbsp;: marier des éléments
+                        historiques (fresques, dorures et moulures d'époque) à
+                        un décor plus contemporain. Un patio a été créé au
+                        centre de l'hôtel, pour permettre aux hôtes de profiter
+                        pleinement d'un nouveau havre de paix en extérieur, au
+                        cœur de la capitale. Le restaurant peut accueillir
+                        jusqu'à 210 clients. Ses plafonds ont été surélevés pour
+                        incorporer au premier étage une mezzanine digne d'un
+                        palace du 21e siècle.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-4 order-1">
+                  <img
+                    src="img/hotel-facade-1-500.jpg"
+                    alt="Photo de façade du Parimis"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <h2>Une stratégie de développement</h2>
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 order-1">
+                  <div class="container">
+                    <div class="row">
+                      <p>
+                        Nous croyons en une entreprise responsable et nous nous
+                        efforçons sans cesse de construire et de faire évoluer
+                        nos relations avec notre monde et les personnes qui
+                        l'habitent. De la même manière, le consommateur doit
+                        aussi être responsable. Il doit s'interroger sur
+                        l'intégrité des marques, se poser des questions sur la
+                        provenance, les matériaux et le rôle que joue la marque
+                        dans la société.
+                      </p>
+                      <p>
+                        Par le biais de nombreuses initiatives telles que notre
+                        collaboration avec Positive Luxury, le Parimis vise à
+                        établir un cadre éthique qui remplisse l'obligation
+                        d'agir dans l'intérêt de la société en général, et pas
+                        uniquement dans l'intérêt immédiat de l'entreprise. En
+                        faisant des choix proactifs allant au-delà des exigences
+                        minimales dictées par les autorités gouvernementales,
+                        nous pouvons mettre en place des pratiques qui
+                        responsabilisent les entreprises en matière d'impact sur
+                        le bien-être environnemental et social et ont un impact
+                        plus positif.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mb-5 order-2">
+                  <img src="img/nature-500.jpg" alt="Photo de forêt" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-11 fiche-service qui-sommes-nous newsletter">
+            <h2>S'abonner à notre newsletter</h2>
+            <p>
+                Pour recevoir notre newsletter hebdomadaire et tout connaître de l'actualité du Parimis, ses offres du moment, les célébrités qui y ont séjourné dernièrement et bien plus, abonnez-vous à notre newsletter.
+            </p>
+
+            <form class="resa-zone" id="newsletter">
+                <p>
+                    <label for="mailNewsletter">Votre adresse e-mail&nbsp;:</label><br />
+                    <input
+                      type="text"
+                      name="mail"
+                      id="mailNewsletter"
+                      value=""
+                      maxlength="150"
+                    />
+                  </p>
+
+                  <p>
+                    <input
+                      type="submit"
+                      id="idSubmitNewsletter"
+                      name="submit"
+                      value="Valider"
+                    />
+                  </p>
+            </form>
+
+
+          </div>
+        </div>
+      </section>
+
+      <div class="degrade-haut-footer row align-items-end">
+        <h2 class="col-12">Hôtel Parimis</h2>
+      </div>
+    </main>
+
+    <!-- *** Footer *** -->
+    <footer>
+      <p>
+        1, avenue Montaigne <br />
+        75008 Paris - France
+      </p>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <ul class="footer-social-networks col-12 col-lg-6">
+            <li class="footer-facebook">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="footer-twitter">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li class="footer-instagram">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </li>
+            <li class="footer-youtube">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-youtube-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <p class="col-12 col-lg-8">
+            <a href="qui-sommes-nous.html">Qui&nbsp;sommes-nous ?</a> ●&nbsp;<a
+              href="qui-sommes-nous#newsletter.html"
+              >Newsletter</a
+            >
+            ●&nbsp;<a href="recrutement.html">Recrutement</a> ●&nbsp;<a
+              href="mentions-legales.html"
+              >Mentions&nbsp;légales</a
+            >
+            ●&nbsp;<a href="conditions-generales-de-vente.html"
+              >Conditions&nbsp;générales&nbsp;de&nbsp;vente</a
+            >
+            ●&nbsp;<a href="plan-du-site.html">Plan&nbsp;du&nbsp;site</a>
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <p id="bouton-imprimer" class="col-12">
+            <a href="#"><i class="fas fa-print"></i>&nbsp;Imprimer la page</a>
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <p id="avertissement" class="col-12 col-lg-10">
+            Ce site a été réalisé comme projet pédagogique, dans le cadre d'une
+            formation en développement et intégration Web au sein de l'IFOCOP.
+            Il n'a aucune visée commerciale et les services qu'il propose sont
+            fictifs.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- *** SCRIPTS *** -->
+
+    <!-- jQuery et jQuery UI  -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sticky plug in pour le positionnement du menu -->
+    <script src="js/jquery.sticky.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#sticker").sticky({ topSpacing: 0 });
+      });
+    </script>
+
+    <!-- Lightbox pour avoir une galerie d'images zoomables -->
+    <script src="js/lightbox.min.js"></script>
+    <!-- Faire défiler les images de la galerie de façon cyclée et les afficher rapidement au clic -->
+    <script>
+      lightbox.option({
+        resizeDuration: 100,
+        wrapAround: true,
+      });
+    </script>
+
+    <!-- Scripts personnels ajoutés  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

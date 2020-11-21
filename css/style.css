@@ -652,3 +652,31 @@ footer hr{
     margin-bottom: 3rem !important;
 }
 
+.qui-sommes-nous p{
+    margin-bottom: 1rem;
+}
+
+.qui-sommes-nous h2{
+    margin-top: 6rem;
+}
+
+#newsletter{
+    padding: 0;
+    margin-bottom: 6rem;
+}
+
+#newsletter p{
+    text-align: center;
+}
+
+.newsletter{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 570px;
+
+}
+
+.google-map{
+    max-width: 90%;
+    margin-bottom: 3rem;
+}

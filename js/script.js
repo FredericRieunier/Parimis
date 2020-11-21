@@ -128,6 +128,10 @@ var dates = $("#from, #to").datepicker({
         } ) );
 
 // Vérifications des formulaires de réservation
+
+// Pour les vérifications de format de mail (code repris du livre "JavaScript pour les nuls" ;) )
+var emailRE = /^.+@.+\..{2,4}$/;
+
     // Chambres
 $('#id-resa-form').submit(function(event){
   event.preventDefault();
@@ -135,13 +139,14 @@ $('#id-resa-form').submit(function(event){
   // On vérifie que tous les champs sont remplis.
     if(!$('#prenom').val() || !$('#nom').val() || !$('#mail').val() || !$('#mail-confirmation').val() || $('#id-nombre-personnes option:selected').val() == '0' || $('#id-nombre-chambres option:selected').val() == '0' || !$('#from').val() || !$('#to').val()){  
       alert('Veuillez remplir tous les champs non-optionnels');
+    } else if(!($('#mail').val().match(emailRE)) || !($('#mail-confirmation').val().match(emailRE))){
+      alert("Veuillez entrer une adresse e-mail valide.");
     }
 })
 
     // Spa et restaurant
 $('#id-resa-form2').submit(function(event){
   event.preventDefault();
-    console.log($('#id-nombre-personnes').val());
   // On vérifie que tous les champs sont remplis.
     if(!$('#prenom').val() || !$('#nom').val() || !$('#mail').val() || !$('#mail-confirmation').val() || $('#id-nombre-personnes option:selected').val() == '0' || $('#id-nombre-chambres option:selected').val() == '0' || !$('#from').val()){  
       alert('Veuillez remplir tous les champs non-optionnels');
@@ -168,3 +173,35 @@ $('#mail').keyup(function(){
     $('#mail').removeClass('bad-mail-confirmation');
   }
 });
+
+// Confirmation de la page avis
+$('#id-avis-form').submit(function(event){
+  event.preventDefault();
+  // On vérifie que tous les champs sont remplis.
+    if(!$('#prenom').val() &&  $('#message').val()){  
+      alert('Veuillez indiquer votre prénom ou pseudo.');
+    } else if($('#prenom').val() &&  !$('#message').val()){  
+      alert('Veuillez rédiger un message.');
+    } else{
+      alert('Veuillez indiquer votre prénom ou pseudo et rédiger un message.');
+    }
+
+})
+
+// Confirmation newsletter
+$('#newsletter').submit(function(event){
+  event.preventDefault();
+  if(!$('#mailNewsletter').val()){
+  alert('Veuillez entrer votre adresse e-mail.');
+  
+  // Vérification du format de l'adresse mail 
+  } else if($('#mailNewsletter').val().match(emailRE)){
+    console.log("l'e-mail correspond");
+  } else {
+    //console.log("l'e-mail ne correspond pas");
+    alert("Veuillez entrer une adresse e-mail valide.");
+  }
+})
+
+
+    
