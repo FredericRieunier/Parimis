@@ -138,9 +138,11 @@ $('#id-resa-form').submit(function(event){
     console.log($('#id-nombre-personnes').val());
   // On vérifie que tous les champs sont remplis.
     if(!$('#prenom').val() || !$('#nom').val() || !$('#mail').val() || !$('#mail-confirmation').val() || $('#id-nombre-personnes option:selected').val() == '0' || $('#id-nombre-chambres option:selected').val() == '0' || !$('#from').val() || !$('#to').val()){  
-      alert('Veuillez remplir tous les champs non-optionnels');
+      alert('Veuillez remplir tous les champs non-optionnels.');
     } else if(!($('#mail').val().match(emailRE)) || !($('#mail-confirmation').val().match(emailRE))){
       alert("Veuillez entrer une adresse e-mail valide.");
+    } else{
+      alert('Votre réservation a bien été prise en compte.');
     }
 })
 
@@ -150,10 +152,14 @@ $('#id-resa-form2').submit(function(event){
   // On vérifie que tous les champs sont remplis.
     if(!$('#prenom').val() || !$('#nom').val() || !$('#mail').val() || !$('#mail-confirmation').val() || $('#id-nombre-personnes option:selected').val() == '0' || $('#id-nombre-chambres option:selected').val() == '0' || !$('#from').val()){  
       alert('Veuillez remplir tous les champs non-optionnels');
+    } else if(!($('#mail').val().match(emailRE)) || !($('#mail-confirmation').val().match(emailRE))){
+      alert("Veuillez entrer une adresse e-mail valide.");
+    } else{
+      alert('Votre réservation a bien été prise en compte.');
     }
 })
 
-// Confirmation de l'adresse e-mail
+// Confirmation de l'adresse e-mail de confirmation
 $('#mail-confirmation').keyup(function(){
   if($('#mail').val() != $('#mail-confirmation').val()){
     $('#mail-confirmation').addClass('bad-mail-confirmation');
@@ -164,6 +170,7 @@ $('#mail-confirmation').keyup(function(){
   }
 });
 
+// Confirmation de l'adresse e-mail
 $('#mail').keyup(function(){
   if($('#mail').val() != $('#mail-confirmation').val()){
     $('#mail-confirmation').addClass('bad-mail-confirmation');
@@ -182,8 +189,10 @@ $('#id-avis-form').submit(function(event){
       alert('Veuillez indiquer votre prénom ou pseudo.');
     } else if($('#prenom').val() &&  !$('#message').val()){  
       alert('Veuillez rédiger un message.');
-    } else{
+    } else if(!$('#prenom').val() &&  !$('#message').val()){
       alert('Veuillez indiquer votre prénom ou pseudo et rédiger un message.');
+    } else{
+      alert('Votre commentaire a bien été pris en compte.')
     }
 
 })
@@ -196,12 +205,44 @@ $('#newsletter').submit(function(event){
   
   // Vérification du format de l'adresse mail 
   } else if($('#mailNewsletter').val().match(emailRE)){
-    console.log("l'e-mail correspond");
+    alert('Votre abonnement à la newsletter est validé.')
   } else {
     //console.log("l'e-mail ne correspond pas");
     alert("Veuillez entrer une adresse e-mail valide.");
   }
 })
 
+// Contact
+$('#id-contact-form').submit(function(event){
+  event.preventDefault();
+  // On vérifie que tous les champs sont remplis.
+    if(!$('#prenom').val() || !$('#nom').val() || !$('#entreprise').val() || !$('#mail').val() || !$('#mail-confirmation').val() || !$('#pays').val() || !$('#sujet').val() || !$('#message').val()){  
+      alert('Veuillez remplir tous les champs.');
+    } else if(!($('#mail').val().match(emailRE)) || !($('#mail-confirmation').val().match(emailRE))){
+      alert("Veuillez entrer une adresse e-mail valide.");
+    } else{
+      alert('Votre message a bien été envoyé.');
+    }
+})
 
-    
+
+// Tentative de fonction champ vide
+/* 
+MARCHE AC LES ALERT
+function champVide(formId, inputId){
+  
+  formId.submit(function(event){
+    event.preventDefault();
+
+
+    if(!inputId.val()){
+      alert('pas ok')
+      // return true;     MARCHE PAS
+    } else{
+      alert('ok')
+      // return false;    MARCHE PAS
+    }
+  });
+} */
+
+
