@@ -603,7 +603,8 @@ footer hr{
 }
 
 .bad-mail-confirmation{
-    background-color: rgba(212, 51, 51, 0.671);
+    background-color: rgba(212, 51, 51, 0.068);
+    border:  rgba(212, 51, 51, 0.548) solid 2px;
 }
 
 #from, #to{

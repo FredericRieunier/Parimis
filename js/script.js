@@ -225,6 +225,20 @@ $('#id-contact-form').submit(function(event){
     }
 })
 
+// Recrutement
+$('#id-recrutement-form').submit(function(event){
+  event.preventDefault();
+  // On vérifie que tous les champs sont remplis.
+    if(!$('#prenom').val() || !$('#nom').val() || !$('#entreprise').val() || !$('#mail').val() || !$('#mail-confirmation').val() || !$('#cv').val() || !$('#lettre-motivation').val() || !$('#message').val()){  
+      alert('Veuillez remplir tous les champs.');
+    } else if(!($('#mail').val().match(emailRE)) || !($('#mail-confirmation').val().match(emailRE))){
+      alert("Veuillez entrer une adresse e-mail valide.");
+    } else{
+      alert('Votre candidature a bien été envoyée.');
+    }
+})
+
+
 
 // Tentative de fonction champ vide
 /* 
