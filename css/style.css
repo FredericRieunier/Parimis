@@ -653,6 +653,7 @@ footer hr{
     margin-bottom: 3rem !important;
 }
 
+/* Qui sommes-nous ? */
 .qui-sommes-nous p{
     margin-bottom: 1rem;
 }
@@ -677,7 +678,31 @@ footer hr{
 
 }
 
+/* Accès */
 .google-map{
     max-width: 90%;
     margin-bottom: 3rem;
+}
+
+/* Événements */
+.iframe-video{
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 80%;
+}
+
+/* Presse */
+.presse-chapeau{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.presse-lire-suite{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cadre-youtube{
+    max-width: 90%;
 }
