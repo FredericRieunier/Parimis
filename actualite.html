@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- *** LINKS *** -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Reem+Kufi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Lightbox pour avoir une galerie d'images zoomables -->
+    <link href="css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/1c094ac9ba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- *** Meta *** -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Frédéric Rieunier" />
+
+    <!-- A MODIFIER -->
+    <meta
+      name="description"
+      content="Lancement de nouveaux palaces, annonces de de fusions, parteneriats entre groupes, retrouvez toute l'actualité du secteur hôtelier."
+    />
+    <meta
+      name="keywords"
+      content="actualité hôtel, actualité Parimis, actualité hôtels de luxe"
+    />
+
+    <!-- BALISES OG RÉSEAUX SOCIAUX -->
+    <meta property="og:site_name" content="Hôtel cinq étoiles Parimis Paris" />
+    <meta
+      property="og:title"
+      content="Actualité | Hôtel cinq étoiles Paris | spa | Parimis Paris"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://hotel-parimis.fredericrieunier.fr/actualite.html"
+    />
+    <meta
+      property="og:image"
+      content="https://hotel-parimis.fredericrieunier.fr/img/chambre-17-suite-250.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Lancement de nouveaux palaces, annonces de de fusions, parteneriats entre groupes, retrouvez toute l'actualité du secteur hôtelier."
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Actualité | Hôtel 5 étoiles Parimis, Paris</title>
+  </head>
+  <body>
+    <!-- Menu desktop -->
+    <div class="container-fluid menu-container">
+      <div class="row row-titre-parimis justify-content-center pb-3">
+        <div class="col-2 language">
+          Langue&nbsp;:&nbsp;
+          <select name="language" id="language">
+            <option value="french">FR</option>
+            <option value="english">EN</option>
+          </select>
+        </div>
+
+        <h2 class="col-5 titre-parimis">
+          <a href="index.html">Parimis, hôtel cinq étoiles</a>
+        </h2>
+
+        <div class="col-3 reservation-area-content">
+          <a href="reservation.html"><p>Réservez votre séjour</p></a>
+        </div>
+
+        <p class="col-2 panier">
+          <a href="panier.html"
+            ><i class="fas fa-shopping-basket"></i>&nbsp;&nbsp;Panier</a
+          >
+        </p>
+      </div>
+
+      <nav class="navbar navbar-expand" id="sticker">
+        <ul class="navbar-nav align-items-center row">
+          <li class="nav-item col-2">
+            <a class="navbar-brand" href="index.html"
+              ><img src="img/logo-parimis.png" alt="Logo de l'hôtel Parimis"
+            /></a>
+          </li>
+          <li class="nav-item col-2">
+            <a class="nav-link" href="chambres.html">Chambres</a>
+          </li>
+          <li class="nav-item col-1">
+            <a class="nav-link" href="spa.html">Spa</a>
+          </li>
+          <li class="nav-item col-2">
+            <a class="nav-link" href="restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item dropdown col-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              role="button"
+              >Plus...</a
+            >
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="acces.html">Accès</a>
+              <a class="dropdown-item" href="evenements.html">Événements</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="presse.html">Presse</a>
+              <a class="dropdown-item" href="actualite.html">Actualité</a>
+              <a class="dropdown-item" href="avis.html">Avis</a>
+            </div>
+          </li>
+          <li class="col-3">
+            <form
+              class="form-inline my-2 my-lg-0 justify-content-end"
+              id="moteur-recherche"
+            >
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Entrez votre recherche"
+                aria-label="Search"
+                name="zoneRecherche"
+              />
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Menu mobile -->
+    <!-- Bouton burger -->
+    <div class="container-fluid menu-container-mobile">
+      <div class="row">
+        <nav class="offset-9 offset-sm-10 offset-md-11 mt-5">
+          <a href="#" id="menu">
+            <p><i class="fas fa-bars"></i></p
+          ></a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Contenu du menu mobile -->
+    <div id="menu-mobile-contenu" style="display: none">
+      <div class="language-mobile">
+        Langue&nbsp;:&nbsp;
+        <select name="language" id="language-mobile">
+          <option value="french">FR</option>
+          <option value="english">EN</option>
+        </select>
+      </div>
+      <div class="logo-menu-mobile">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo-parimis.png" alt="Logo de l'hôtel Parimis"
+        /></a>
+      </div>
+      <h2 class="titre-parimis mt-2">
+        <a href="index.html">Parimis, hôtel cinq étoiles, Paris</a>
+      </h2>
+      <ul>
+        <li>
+          <a href="reservation.html" class="menu-mobile-reserver">Réserver</a>
+        </li>
+        <li><a href="panier.html">Panier</a></li>
+        <li><a href="chambres.html">Chambres</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="acces.html">Accès</a></li>
+        <li><a href="evenements.html">Événements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="presse.html">Presse</a></li>
+        <li><a href="actualite.html">Actualité</a></li>
+        <li><a href="avis.html">Avis</a></li>
+      </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="header-chambres container-fluid">
+      <div class="blocVideo">
+        <img
+          src="img/chambre-17-1500.jpg"
+          alt="Photo de vêtements et accessoires féminins posés sur une table"
+        />
+      </div>
+    </header>
+
+    <!-- *** Main *** -->
+    <main class="container-fluid">
+      <div class="degrade-bas-video-accueil row"></div>
+      <h1>Actualité</h1>
+
+      <!-- Présentation -->
+      <div class="row justify-content-center">
+        <p class="col-10 baseline">
+          Lancement de nouveaux palaces, annonces de de fusions, parteneriats
+          entre groupes, retrouvez toute l'actualité du secteur hôtelier.
+        </p>
+      </div>
+
+      <section class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-11 fiche-service qui-sommes-nous">
+            <h2>Les brèves de l'actualité hôtelière</h2>
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                  <!-- 1 -->
+                <div class="col-md-12 col-lg-6">
+                  <div class="container-fluid">
+                    <div class="row actualite-encart align-items-start">
+                      <!-- Réduire margin top et agrandir img en virant les offsets -->
+                      <h3 class="col-12">Des hôtels pour les sans-abris</h3>
+                      <div class="col-12 col-sm-4 actualite-img">
+                        <img
+                          src="img/1-nord-sans-abris_100.jpg"
+                          alt="Photo de personne ouvrant une porte"
+                        />
+                      </div>
+                      <p class="col-12 col-sm-8 actualite-breve">
+                        Cette opération a été déclenchée dans le cadre de la
+                        veille sanitaire qui doit durer au moins jusqu'au 31
+                        mars. Les services de l'Etat essayent ainsi de permettre
+                        aux personnes sans abris de se confiner dans des
+                        logements dignes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Trouville : travaux au Beach Hôtel</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/2-trouville_100.jpg"
+                            alt="Photo de façade du Beach Hôtel"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            Depuis le 19 octobre 2020, le Beach Hôtel, à Trouville-sur-Mer, a entrepris d’importants travaux de rénovation et d’embellissement des chambres, parties communes et de la zone d’accueil, afin d’offrir confort, raffinement et convivialité, dans un cadre élégant et contemporain.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- 3 -->
+                <div class="col-md-12 col-lg-6">
+                  <div class="container-fluid">
+                    <div class="row actualite-encart align-items-start">
+                      <!-- Réduire margin top et agrandir img en virant les offsets -->
+                      <h3 class="col-12">Le lac du Der prend la bonne vague</h3>
+                      <div class="col-12 col-sm-4 actualite-img">
+                        <img
+                          src="img/3-lac-du-der_100.jpg"
+                          alt="Photo du lac de Der"
+                        />
+                      </div>
+                      <p class="col-12 col-sm-8 actualite-breve">
+                        Le projet d’implantation d’un hôtel et la construction de nouvelles cellules commerciales s’ébauchent un peu plus sur les bords de la belle étendue d’eau, et se confortent bien d’un espace de balnéothérapie.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">La Maison des fées fait des miracles </h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/4-maison-fees_100.jpg"
+                            alt="Photo d'une femme avec un bébé"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            L’Etat finance la « reconversion » des hôtels privés de clients en centre d’hébergement d’urgence. Dans le XVIIIe arrondissement de Paris, un trois étoiles touristique accueille désormais une soixantaine de femmes sans-papier qui étaient à la rue avec leurs enfants.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 5 -->
+
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Les soins de spa sont bons pour la santé</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/5-spa-etude-100.jpg"
+                            alt="Photo de femme devant une piscine"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                          Une étude américaine l'atteste&nbsp;: massages, bains et <a href="spa.html">soins découverte</a> en tout genre ont un effet bénéfique sur le système digestif. Ils réduiraient aussi le stress et limiteraient les risques de cancers colorectaux. Une raison de plus de <a href="reservation-spa.html">réserver au spa du Parimis</a>.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 6 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Maroc : la Mamounia est restaurée</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/6-mamounia_100.jpg"
+                            alt="Photo de façade du Mamounia"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            Déjà adulée des célébrités, la Mamounia a connu une vaste rénovation en février dernier. Avec en plus une salle de cinéma, une œnothèque et une trattoria, le palace marrakchi s’impose encore plus dans l'hôtellerie de luxe.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- 7 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Accor accélère dans l'ultra luxe</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/7-accor_100.jpg"
+                            alt="Photo de chambre d'hôtel"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            Le champion français de l'hôtellerie refond le pilotage de ses marques. Il crée deux unités pour y loger ses enseignes « lifestyle », telles Jo & Joe, Mama Shelter ou So d'une part, et deux autres relevant de l'ultra luxe, Raffles et Orient Express, d'autre part. Son objectif&nbsp;: accélérer leur développement sans gommer leurs spécificités.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 8 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Lionel Messi se met à l'hôtellerie de luxe</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/8-messi_100.jpg"
+                            alt="Portrait de Lionel Messi"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            La star du FC Barcelone diversifie ses investissement. Lionel Messi va ouvrir le 4 décembre prochain un hôtel 4 étoiles dans une station de skis des Pyrénées, à la frontière franco-espagnole. Cet établissement au pied des pistes, doté de 141 chambres, sera luxueux.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 9 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Nouvel hôtel à Cap d’Ail-Monaco </h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/9-monaco_100.jpg"
+                            alt="Photo de Monaco"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            Fondimmo annonce le développement d’un complexe hôtelier de luxe, le Kempinski, à Cap d’Ail-Monaco, dessiné par les architectes Massimiliano et Doriana Fuksas. Le groupe immobilier Fondimmo veut faire du futur établissement une icône et la référence de l’hôtellerie de luxe à l’international.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 10 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Martinhal se met au golf</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/10-martinhal_100.jpg"
+                            alt="Photo de façade d'hôtel de luxe"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            Spécialisé dans l’hôtellerie de luxe au Portugal, le groupe Martinhal propose à Quinta do Lago et à Sagres de belles villas qui combleront les golfeuses et les golfeurs qui visitent l’Algarve avec les enfants. Le Martinhal Quinta abrite de luxueuses villas et des maisons haut de gamme, lesquelles sont dotées d’un jardin privé avec piscine.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 11 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Jean Nouvel et le luxe saoudien</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/11-jean-nouvel_100.jpg"
+                            alt="Paysage saoudien"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            L’architecte Jean Nouvel a révélé le nouveau projet époustouflant dans lequel il se lance&nbsp;: un complexe hôtelier haut de gamme, construit dans les falaises du désert d’Al-Ula en Arabie saoudite afin de promouvoir le tourisme dans cette région chargée d'histoire. Il répond à un plan d'action visant à valoriser les lieux.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 12 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Un forfait vacances illimitées</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/12-maldives_100.jpg"
+                            alt="Photo d'hôtel aux Maldives"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                          Le groupe hôtelier Anantara Veli, situé sur l’archipel des Maldives, propose une offre plutôt originale. Réservée aux adultes, elle permet aux voyageurs de profiter de ce complexe de luxe à volonté durant toute l’année 2021. Un petit coin de paradis accessible à tout moment qui a tout de même un coût&nbsp;: 30.000 dollars, soit environ 25.300 euros. <a href="reservation.html">Le Parimis est plus abordable</a>.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 13 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">La formation hôtelière face à la crise</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/13-formation_100.jpg"
+                            alt="Photo de jeunes en formation"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            Les jeunes diplômés doivent faire face à la chute vertigineuse des embauches depuis la crise sanitaire. Les écoles spécialisées s’efforcent d’ouvrir des perspectives nouvelles à leurs élèves, convoités par d’autres secteurs en quête de leur savoir-faire dans le contact client.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 14 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Ovolo devient 100 % végétarien</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/14-vegetarien_100.jpg"
+                            alt="Photo d'assiette végétarienne"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            L’hôtelier Ovolo a converti tous ses établissements à l’alimentation végétale. Pendant un an, les restaurants, bars et room services opérant sous la bannière d’Ovolo proposeront désormais uniquement des menus haut-de-gamme 100% végétariens, privilégiant les ingrédients locaux et issus de modes de production éthiques. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 15 -->
+                  <div class="col-md-12 col-lg-6">
+                    <div class="container-fluid">
+                      <div class="row actualite-encart align-items-start">
+                        <!-- Réduire margin top et agrandir img en virant les offsets -->
+                        <h3 class="col-12">Alain Ducasse ouvre une école</h3>
+                        <div class="col-12 col-sm-4 actualite-img">
+                          <img
+                            src="img/15-alain-ducasse_100.jpg"
+                            alt="Photo de formation culinaire"
+                          />
+                        </div>
+                        <p class="col-12 col-sm-8 actualite-breve">
+                            L’établissement a ouvert ses portes le 9 novembre et accueille des étudiants en formation initiale préparant deux «bachelors» en 3 ans. «Enseigner l’ADN de la cuisine française»: voilà le vœu d’Alain Ducasse, chef triplement étoilé à la tête d’un empire de la restauration qui ouvre, en pleine crise sanitaire, une nouvelle école d’excellence.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="degrade-haut-footer row align-items-end">
+        <h2 class="col-12">Hôtel Parimis</h2>
+      </div>
+    </main>
+
+    <!-- *** Footer *** -->
+    <footer>
+      <p>
+        1, avenue Montaigne <br />
+        75008 Paris - France
+      </p>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <ul class="footer-social-networks col-12 col-lg-6">
+            <li class="footer-facebook">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="footer-twitter">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li class="footer-instagram">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </li>
+            <li class="footer-youtube">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-youtube-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <p class="col-12 col-lg-8">
+            <a href="qui-sommes-nous.html">Qui&nbsp;sommes-nous ?</a> ●&nbsp;<a
+              href="qui-sommes-nous#newsletter.html"
+              >Newsletter</a
+            >
+            ●&nbsp;<a href="recrutement.html">Recrutement</a> ●&nbsp;<a
+              href="mentions-legales.html"
+              >Mentions&nbsp;légales</a
+            >
+            ●&nbsp;<a href="conditions-generales-de-vente.html"
+              >Conditions&nbsp;générales&nbsp;de&nbsp;vente</a
+            >
+            ●&nbsp;<a href="plan-du-site.html">Plan&nbsp;du&nbsp;site</a>
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <p id="bouton-imprimer" class="col-12">
+            <a href="#"><i class="fas fa-print"></i>&nbsp;Imprimer la page</a>
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <p id="avertissement" class="col-12 col-lg-10">
+            Ce site a été réalisé comme projet pédagogique, dans le cadre d'une
+            formation en développement et intégration Web au sein de l'IFOCOP.
+            Il n'a aucune visée commerciale et les services qu'il propose sont
+            fictifs.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- *** SCRIPTS *** -->
+
+    <!-- jQuery et jQuery UI  -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sticky plug in pour le positionnement du menu -->
+    <script src="js/jquery.sticky.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#sticker").sticky({ topSpacing: 0 });
+      });
+    </script>
+
+    <!-- Lightbox pour avoir une galerie d'images zoomables -->
+    <script src="js/lightbox.min.js"></script>
+    <!-- Faire défiler les images de la galerie de façon cyclée et les afficher rapidement au clic -->
+    <script>
+      lightbox.option({
+        resizeDuration: 100,
+        wrapAround: true,
+      });
+    </script>
+
+    <!-- Scripts personnels ajoutés  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -706,3 +706,24 @@ footer hr{
 .cadre-youtube{
     max-width: 90%;
 }
+
+/* Actualité */
+.actualite-img{
+    padding-bottom: 1rem;
+}
+
+.actualite-breve{
+    margin-top: 0 !important;
+    height: 20rem;
+}
+
+.actualite-breve a{
+    color: var(--deep-gray);
+    text-decoration: underline;
+}
+
+.actualite-encart{
+    border: white dashed 2px;
+    height: 30rem;
+    margin-bottom: 1rem;
+}
