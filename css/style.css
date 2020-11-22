@@ -717,7 +717,7 @@ footer hr{
     height: 20rem;
 }
 
-.actualite-breve a{
+.actualite-breve a, .mentions-legales a{
     color: var(--deep-gray);
     text-decoration: underline;
 }
