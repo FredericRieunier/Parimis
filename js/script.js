@@ -238,7 +238,17 @@ $('#id-recrutement-form').submit(function(event){
     }
 })
 
-
+// Panier
+$('#id-resa-panier').submit(function(event){
+  event.preventDefault();
+  
+  if(!$('#cgv').get(0).checked){
+    alert('Veuillez accepter les conditions générales de vente.')
+  }
+  else{
+    alert('Vous allez être redirigé vers le site de votre banque.');
+  }
+})
 
 // Tentative de fonction champ vide
 /* 

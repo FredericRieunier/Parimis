@@ -581,6 +581,10 @@ footer hr{
     display: none;
 }
 
+.spa-fiche-contenu1 .col-11, .spa-fiche-contenu2 .col-11, .spa-fiche-contenu3 .col-11, .spa-fiche-contenu4 .col-11, .spa-fiche-contenu5 .col-11{
+    text-align: justify;
+}
+
 .spa-fiche-generale li{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.6rem;
@@ -726,4 +730,10 @@ footer hr{
     border: white dashed 2px;
     height: 30rem;
     margin-bottom: 1rem;
+}
+
+/* Panier */
+#id-resa-panier a{
+    color: var(--deep-gray);
+    text-decoration: underline;
 }
