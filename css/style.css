@@ -416,6 +416,15 @@ footer hr{
     color: var(--light-white);
 }
 
+.portfolio{
+    color: white;
+    font-weight: bold;
+}
+
+.portfolio a{
+    text-decoration: underline;
+}
+
 /*** CSS des différentes pages ***/
 
 /** Index **/
@@ -730,6 +739,12 @@ footer hr{
     border: white dashed 2px;
     height: 30rem;
     margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 440px){
+    .actualite-encart{
+        height: 45rem;
+    }
 }
 
 /* Panier */
