@@ -9,6 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Reem+Kufi&display=swap"
       rel="stylesheet"
     />
+    <!-- Lightbox pour avoir une galerie d'images zoomables -->
+    <link href="css/lightbox.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Fontawesome -->
@@ -127,6 +130,19 @@
     <title>Hôtel 5 étoiles Parimis, Paris</title>
   </head>
   <body>
+
+    <!-- Avertissement -->
+    <div class="container-fluid" id="covid-avertissement">
+      <div class="row">
+        <div class="offset-10 col-2" id="ferme-avertissement">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <p class="offset-1 col-10">En raison de la situation sanitaire, le Parimis est temporairement fermé. Il rouvrira dès que les mesures gouvernementales le permettront.</p>
+        
+
+      </div>
+    </div>
+
     <!-- Menu desktop -->
     <div class="container-fluid menu-container">
       <div class="row row-titre-parimis justify-content-center pb-3">
@@ -253,6 +269,7 @@
       </ul>
     </div>
     <header class="header-index">
+      <h1>Hôtel Parimis, Paris</h1>
       <div class="blocVideo">
         <video poster="img/poster-video-accueil.jpg" autoplay loop muted>
           <source
@@ -264,10 +281,11 @@
 
     <!-- *** Main *** -->
     <main class="container-fluid">
+      
       <div class="degrade-bas-video-accueil row"></div>
-      <h1>Hôtel Parimis, Paris</h1>
+      <h2 class="h2-principal">Osez</h2>
 
-      <p class="baseline">Venez voir Paris tel que vous n'osiez le rêver.</p>
+      <p class="baseline baseline-index">Venez voir Paris tel que vous n'osiez le rêver.</p>
 
       <!-- Carrousel -->
 
@@ -396,20 +414,21 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xl-6 img-position">
-          <img
+      <div class="row justify-content-center">
+        <div class="galerie">
+          <a href="img/chambre-5-confort-900.jpg" data-lightbox="accueil-chambres"
+          data-alt="Photo de suite"><img
             src="img/chambre-5-500.jpg"
-            class="img-fluid"
+            class="img-fluid mr-5 ml-5"
             alt="Photo de suite"
-          />
-        </div>
-        <div class="col-xl-6 img-position">
-          <img
+          /></a>
+
+          <a href="img/chambre-6-deluxe-900.jpg" data-lightbox="accueil-chambres"
+          data-alt="Photo de chambre deluxe"><img
             src="img/chambre-6-500.jpg"
-            class="img-fluid"
+            class="img-fluid ml-5 mr-5"
             alt="Photo de chambre deluxe"
-          />
+          /></a>
         </div>
       </div>
 
@@ -473,28 +492,40 @@
 
       <!-- Restaurant -->
       <h2>Restaurant</h2>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 img-position img-enlarge">
+      <div class="row justify-content-center">
+        <div class="galerie ">
+          <a href="img/cuisine-3-900.jpg" data-lightbox="accueil-cuisine"
+          data-alt="Photo de riz aux crevettes thaï">
           <img
             src="img/cuisine-3-400.jpg"
             class="img-fluid"
             alt="Photo de riz aux crevettes thaï"
           />
-        </div>
-        <div class="col-lg-4 col-md-6 img-position img-enlarge">
+        </a>
+
+        <a href="img/restaurant-2-900.jpg" data-lightbox="accueil-cuisine"
+        data-alt="Photo de salle de restaurant">
           <img
             src="img/restaurant-2-400.jpg"
             class="img-fluid"
             alt="Photo de salle de restaurant"
           />
-        </div>
-        <div class="col-lg-4 col-md-12 img-position img-enlarge">
+        </a>
+
+        <a href="img/cuisine-8-900.jpg" data-lightbox="accueil-cuisine"
+        data-alt="Photo de fraises">
           <img
-            src="img/cuisine-8-400.jpg"
-            class="img-fluid"
-            alt="Photo de fraises"
-          />
+          src="img/cuisine-8-400.jpg"
+          class="img-fluid"
+          alt="Photo de fraises"
+        />
+        </a>
+          
+
+         
+
         </div>
+
       </div>
 
       <div class="row">
@@ -642,6 +673,16 @@
     <script>
       $(document).ready(function () {
         $("#sticker").sticky({ topSpacing: 0 });
+      });
+    </script>
+
+    <!-- Lightbox pour avoir une galerie d'images zoomables -->
+    <script src="js/lightbox.min.js"></script>
+    <!-- Faire défiler les images de la galerie de façon cyclée et les afficher rapidement au clic -->
+    <script>
+      lightbox.option({
+        resizeDuration: 100,
+        wrapAround: true,
       });
     </script>
 

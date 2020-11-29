@@ -61,6 +61,29 @@ toggleSpa($('.spa-fiche-contenu4'), $('.spa-fiche-toggle4'));
 toggleSpa($('.spa-fiche-contenu5'), $('.spa-fiche-toggle5'));
 
 
+/* Même chose pour les cartes du restaurant.
+Fonction toggle sur les fiches de soins du spa, qui :
+  - affiche ou masque la fiche complète
+  - change le lien de "Voir la fiche complète" en "Masquer la fiche" et vice versa
+*/
+function toggleRestau(fiche, toggled){
+  toggled.click(function(){
+    if(fiche.hasClass('toggleActivated')){
+      fiche.slideUp();
+      fiche.removeClass('toggleActivated');
+      toggled.text('Voir la carte');
+    } else{
+      fiche.slideDown();
+      fiche.addClass('toggleActivated');
+      toggled.text('Masquer la carte');
+    }
+  });
+}
+
+toggleRestau($('.restau-fiche-contenu1'), $('.restau-fiche-toggle1'));
+toggleRestau($('.restau-fiche-contenu2'), $('.restau-fiche-toggle2'));
+toggleRestau($('.restau-fiche-contenu3'), $('.restau-fiche-toggle3'));
+toggleRestau($('.restau-fiche-contenu4'), $('.restau-fiche-toggle4'));
 
 
 /*  Datepicker pour le formulaire de réservation
@@ -270,3 +293,11 @@ function champVide(formId, inputId){
 } */
 
 
+// Avertissement
+/* $(window).load(function(){
+  alert('OK');
+}) */
+
+$('#ferme-avertissement').click(function(){
+  $('#covid-avertissement').slideUp(1000);
+})

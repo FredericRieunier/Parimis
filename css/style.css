@@ -9,10 +9,10 @@
   font-size: 62.5%;
 }
 
-.row{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /*** Parties communes ***/
@@ -25,730 +25,832 @@ body {
 
   /* Définition des couleurs de la charte graphique */
   --deep-gray: hsl(0, 0%, 22%);
-  --pale-gray: #C2BEBE;
+  --pale-gray: #c2bebe;
   --very-pale-gray: #e4e4e4;
   --light-gray: #ebe9e9;
   --red: firebrick;
   --light-white: ivory;
 }
 
-.container-fluid{
-    padding-right: 0;
-    padding-left: 0;
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
 }
 
-a{
-    color: var(--pale-gray);
-    text-decoration: none;
+a {
+  color: var(--pale-gray);
+  text-decoration: none;
 }
 
-a:hover{
-    color: var(--red);
-    text-decoration: none;
+a:hover {
+  color: var(--red);
+  text-decoration: none;
 }
 
-main{
-    position: relative;
+main {
+  position: relative;
 }
 
-main p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
-    margin-bottom: 4rem;
+main p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: justify;
+  margin-bottom: 4rem;
 }
 
-.img-position{
-    text-align: center;
-    margin-bottom: 4rem;
+.img-position {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.img-enlarge img{
-    width: 100%;
-    max-width: 500px;
+.img-enlarge img {
+  width: 100%;
+  max-width: 500px;
 }
 
-hr{
-    margin-bottom: 4rem;
+hr {
+  margin-bottom: 4rem;
 }
 
+/*  */
 
-h1{
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    font-size: 4rem;
-    position: relative;
-    bottom: 10rem;
-    height: 5rem;
+h1 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+  top: 10rem;
+  height: 12rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: white;
+  background: linear-gradient(to bottom, black, black 60%, black 90%, transparent 95%);
+  z-index: 1;
 }
 
-h2{
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    font-size: 3rem;
-    position: relative;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+/*  */
+
+/* h1 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+  bottom: 10rem;
+  height: 5rem;
+} */
+
+h2 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-h3{
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 2.4rem;
-    margin-top: 1rem;
+.h2-principal{
+  z-index: 1; 
+  margin-top: -18rem;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
-h4{
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-family: 'Reem Kufi', sans-serif;
+h3 {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 2.4rem;
+  margin-top: 1rem;
 }
 
-.baseline{
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 2rem;
-    text-align: center;
+h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: "Reem Kufi", sans-serif;
 }
 
-.bouton-lien-animation{
-    padding-bottom: 4rem;
-    position: relative;
+.baseline {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.bouton-lien{
-    background-color: var(--deep-gray);
-    padding: 0;
-    border-radius: .5rem;
-    transition: .5s all ease;
-    bottom: 0;
-    position: relative;
-    text-align: center;
+.baseline-index{
+  margin-top: 4rem;
 }
 
-
-.bouton-60{
-    width: 60%;
+.bouton-lien-animation {
+  padding-bottom: 4rem;
+  position: relative;
 }
 
-.bouton-lien p{
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin: 0 !important;
+.bouton-lien {
+  background-color: var(--deep-gray);
+  padding: 0;
+  border-radius: 0.5rem;
+  transition: 0.5s all ease;
+  bottom: 0;
+  position: relative;
+  text-align: center;
 }
 
-.bouton-lien:hover{
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.747);
-    bottom: .7rem;
-    background-color: var(--red);
+.bouton-60 {
+  width: 60%;
+}
+
+.bouton-lien p {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 !important;
+}
+
+.bouton-lien:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.747);
+  bottom: 0.7rem;
+  background-color: var(--red);
 }
 
 /* Nav */
 nav {
-    width: 100%;
-    background: linear-gradient(to bottom, black, black 60%, transparent 95%);
+  width: 100%;
+  background: linear-gradient(to bottom, black, black 60%, transparent 95%);
 }
 
-.row-titre-parimis{
-    background-color: black;
-    padding-top: 1rem;
-    /* padding-bottom: 3rem !important; */
+.row-titre-parimis {
+  background-color: black;
+  padding-top: 1rem;
+  /* padding-bottom: 3rem !important; */
 }
 
-.row-titre-parimis a{
-    padding-left: 0;
-    padding-right: 0;
+.row-titre-parimis a {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.panier{
-    text-align: right;
+.panier {
+  text-align: right;
 }
 
-.panier a{
-    font-family: 'Reem Kufi', sans-serif;
-    text-align: right;
+.panier a {
+  font-family: "Reem Kufi", sans-serif;
+  text-align: right;
 }
 
-.titre-parimis{
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding-right: 0;
+.titre-parimis {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-right: 0;
 }
 
-.titre-parimis a{
-    color: white;
+.titre-parimis a {
+  color: white;
 }
 
-#logo img{
-    width: 100%;
+#logo img {
+  width: 100%;
 }
 
 /* Menu desktop, intégré avec le composer dropdowns de Bootstrap */
-.menu-container{
-    padding:0;
-    position: absolute;
-    z-index: 2;
-    padding-right: 0;
+.menu-container {
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+  padding-right: 0;
 }
 
-.menu-container h2{
-    padding-left: 0;
+.menu-container h2 {
+  padding-left: 0;
 }
 
-.menu-container h2 a{
-    margin-left: 0;
+.menu-container h2 a {
+  margin-left: 0;
 }
 
-.dropdown:hover .dropdown-menu{
-    display:block;
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
-.dropdown:hover{
-    background-color: black;
+.dropdown:hover {
+  background-color: black;
 }
 
-.nav-item{
-    font-size: 2.4rem;
-    text-align: center;
-    font-family: 'Reem Kufi', sans-serif;
+.nav-item {
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: "Reem Kufi", sans-serif;
 }
 
-.dropdown-menu{
-    background-color: black;
-    font-size: 2rem;
-    border-radius: 0;
-    border: none;
-    top: 3.3rem;
-    width: 100%;
+.dropdown-menu {
+  background-color: black;
+  font-size: 2rem;
+  border-radius: 0;
+  border: none;
+  top: 3.3rem;
+  width: 100%;
 }
 
-
-.dropdown-item{
-    color: var(--pale-gray);
+.dropdown-item {
+  color: var(--pale-gray);
 }
 
-.dropdown-item:hover{
-    background-color: black;
-    color: var(--red);
+.dropdown-item:hover {
+  background-color: black;
+  color: var(--red);
 }
 
-.form-control, .btn{
-    border-radius: 0;
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 1.2rem;
+.form-control,
+.btn {
+  border-radius: .3rem;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 1.2rem;
 }
 
-select{
-    border: none;
-    border-radius: .3rem;
+select {
+  border: none;
+  border-radius: 0.3rem;
 }
 
-.language{
-    color: var(--pale-gray);
-    font-family: 'Reem Kufi', sans-serif;
-    padding-right: 0;
+.language {
+  color: var(--pale-gray);
+  font-family: "Reem Kufi", sans-serif;
+  padding-right: 0;
 }
 
-.language-mobile{
-    text-align: left;
-    color: white;
-    position: relative;
-    top: 3rem;
+.language-mobile {
+  text-align: left;
+  color: white;
+  position: relative;
+  top: 3rem;
 }
 
 /* Masquer le menu desktop */
-@media only screen and (max-width: 991px){
-    .menu-container {
-        display: none;
-    }
+@media only screen and (max-width: 991px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 /* Menu mobile */
 
 .menu-container-mobile nav {
-    position: fixed;
-    z-index: 10;
-    background: transparent;
-  }
-  
+  position: fixed;
+  z-index: 10;
+  background: transparent;
+}
+
 .menu-container-mobile nav p {
-    font-size: 1.6rem;
-    padding: 0 1rem;
-    color: var(--deep-gray);
+  font-size: 1.6rem;
+  padding: 0 1rem;
+  color: var(--deep-gray);
 }
 
-#menu-mobile-contenu{
-    width: 100%;
-    position: fixed;
-    background-color: black;
-    padding: 0 2rem 2rem 2rem;
-    z-index: 2;
+#menu-mobile-contenu {
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  padding: 0 2rem 2rem 2rem;
+  z-index: 2;
 }
 
-.logo-menu-mobile{
-    text-align: center;
+.logo-menu-mobile {
+  text-align: center;
 }
 
-#menu-mobile-contenu a{
-    font-size: 2rem;
-    color: white;
-    font-family: 'Reem Kufi', sans-serif;
+#menu-mobile-contenu a {
+  font-size: 2rem;
+  color: white;
+  font-family: "Reem Kufi", sans-serif;
 }
 
-#menu-mobile-contenu a:hover{
-    color: var(--red);
+#menu-mobile-contenu a:hover {
+  color: var(--red);
 }
 
-#menu-mobile-contenu .titre-parimis{
-    margin-top: 2rem;
+#menu-mobile-contenu .titre-parimis {
+  margin-top: 2rem;
 }
 
-#menu-mobile-contenu .titre-parimis a{
-    font-size: 2.4rem;
-    font-family: 'Cinzel', serif;
+#menu-mobile-contenu .titre-parimis a {
+  font-size: 2.4rem;
+  font-family: "Cinzel", serif;
 }
 
 #menu-mobile-contenu ul {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
-.menu-mobile-reserver{
-    font-weight: 600;
+.menu-mobile-reserver {
+  font-weight: 600;
 }
 
 /* Masquer le menu mobile */
-@media only screen and (min-width: 992px){
-    .menu-container-mobile, #menu-mobile-contenu {
-        display: none;
-    }
+@media only screen and (min-width: 992px) {
+  .menu-container-mobile,
+  #menu-mobile-contenu {
+    display: none;
+  }
 }
 
 /* Header */
 
-header{
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Image de fond du header de template */
-
-.header-template{
-    background-image: url("../img/Louvre-2-nuage.jpg");
-    height: 100vh;
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Bouton de réservation */
-.reservation-area-content{
-    font-size: 2rem;
-    font-family: 'Reem Kufi', sans-serif;
-    border: solid 1px white;
-    background-color: black;
-    max-width: 25rem;
-    border-radius: 1rem;
-    color: white;
-    bottom: 0;
-    transition-property: box-shadow, bottom;
-    transition-duration: .5s;
-    padding-left: 0;
-    padding-right: 0;
+.reservation-area-content {
+  font-size: 2rem;
+  font-family: "Reem Kufi", sans-serif;
+  border: solid 1px white;
+  background-color: black;
+  max-width: 25rem;
+  border-radius: 1rem;
+  color: white;
+  bottom: 0;
+  transition-property: box-shadow, bottom;
+  transition-duration: 0.5s;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.reservation-area-content p{
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 0 !important;
+.reservation-area-content p {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
-.reservation-area-content:hover{
-    box-shadow: 0 .5rem .5rem var(--red);
-    bottom: .3rem;
+.reservation-area-content:hover {
+  box-shadow: 0 0.5rem 0.5rem var(--red);
+  bottom: 0.3rem;
 }
 
 /* Footer */
 
-.degrade-haut-footer{
-    width: 100%;
-    height: 15rem;
-    background: linear-gradient(to top, black 20%, transparent);
-    position: relative;
-    bottom: -1rem;
-    z-index: -1;
+.degrade-haut-footer {
+  width: 100%;
+  height: 15rem;
+  background: linear-gradient(to top, black 20%, transparent);
+  position: relative;
+  bottom: -1rem;
+  z-index: -1;
 }
 
 footer {
-    background-color: black;
-    padding-bottom: 2rem;
+  background-color: black;
+  padding-bottom: 2rem;
 }
 
-.degrade-haut-footer h2{
-    color: var(--light-white);
-    text-align: center;
+.degrade-haut-footer h2 {
+  color: var(--light-white);
+  text-align: center;
 }
 
-footer p{
-    color: var(--pale-gray);
-    text-align: center;
+footer p {
+  color: var(--pale-gray);
+  text-align: center;
 }
 
-footer li a, footer div{
-    color: var(--light-white);
-    font-size: 1.6rem;
+footer li a,
+footer div {
+  color: var(--light-white);
+  font-size: 1.6rem;
 }
 
-footer li a{
-    font-size: 2.4rem;
+footer li a {
+  font-size: 2.4rem;
 }
 
-.footer-social-networks{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 3rem;
+.footer-social-networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 3rem;
 }
 
-footer hr{
-    background-color: var(--light-white);
-    margin-top: 4rem;
+footer hr {
+  background-color: var(--light-white);
+  margin-top: 4rem;
 }
 
-#avertissement{
-    color: var(--light-white);
+#avertissement {
+  color: var(--light-white);
 }
 
-.portfolio{
-    color: white;
-    font-weight: bold;
+.portfolio {
+  color: white;
+  font-weight: bold;
 }
 
-.portfolio a{
-    text-decoration: underline;
+.portfolio a {
+  text-decoration: underline;
 }
 
 /*** CSS des différentes pages ***/
 
 /** Index **/
-.header-index{
-    position: relative;
-    z-index: -1;
+.header-index {
+  position: relative;
+  z-index: -1;
 }
 
-.blocVideo video{
-    position: relative;
-    top: 10rem;
-    width: 100%;
+.blocVideo{
+  background-color: black;
 }
 
-@media only screen and (max-width: 991px){
-    .blocVideo{
-        display: none;
+.blocVideo video {
+  position: relative;
+  top: 5rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .blocVideo {
+    display: none;
+  }
+}
+
+.degrade-bas-video-accueil {
+  width: 100%;
+  height: 15rem;
+  background: linear-gradient(to top, white 20%, white 40%, transparent);
+  position: relative;
+  bottom: 10rem;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 991px) {   
+    .menu-container-mobile i{
+        padding: .5rem;
+        background-color: var(--light-gray);
     }
-}
 
-.degrade-bas-video-accueil{
-    width: 100%;
-    height: 15rem;
-    background: linear-gradient(to top, white 20%, white 40%, transparent);
-    position: relative;
-    bottom: 0;
-    z-index: 0;
-}
+    /* Baisser le h1 en mobile */
+    h1 {
+        margin-top: 7rem;
+        background: white;
+        color: black;
+    }
+
+    .h2-principal{
+      display: none;
+    }
+
+  }
 
 /* Carrousel */
 
-.carousel{
-    margin-bottom: 4rem;
+.carousel {
+  margin-bottom: 4rem;
 }
 
-.carousel-indicators{
-    z-index: 1;
+.carousel-indicators {
+  z-index: 1;
 }
 
 /** Chambres **/
-.blocVideo img{
-    position: relative;
-    top: 10rem;
-    width: 100%;
+.blocVideo img {
+  position: relative;
+  top: 5rem;
+  width: 100%;
 }
 
-.fiche-service{
-    background-color: var(--very-pale-gray);
-    border: solid var(--deep-gray) 1px;
-    padding: 0;
-    margin-bottom: 4rem;
+.fiche-service {
+  background-color: var(--very-pale-gray);
+  border: solid var(--deep-gray) 1px;
+  padding: 0;
+  margin-bottom: 4rem;
 }
 
-.fiche-service p{
-    font-size: 1.4rem;
-    margin-top: 2rem;
+.fiche-service p {
+  font-size: 1.4rem;
+  margin-top: 2rem;
 }
 
-.fiche-service div{
-    max-width: 100%;
-    text-align: center;
+.fiche-service div {
+  max-width: 100%;
+  text-align: center;
 }
 
-.fiche-service img{
-    margin-top: 1rem;
-    max-width: 100%;
+.fiche-service img {
+  margin-top: 1rem;
+  max-width: 100%;
 }
 
-.galerie{
-    border: solid var(--light-white) 2px;
-    padding: 0;
-    /* box-shadow: .3rem .3rem .3rem gray; */
-    margin: 2rem 0 2rem 0;
-    text-align: center;
-    padding: 1.5rem .2rem 1.5rem .2rem;
+.galerie {
+  border: solid var(--light-white) 2px;
+  padding: 0;
+  /* box-shadow: .3rem .3rem .3rem gray; */
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  padding: 1.5rem 0.2rem 1.5rem 0.2rem;
 }
 
 .galerie img {
-    transition: .5s;
-    padding: 10px;
-    filter: grayscale(70%);
+  transition: 0.5s;
+  padding: 10px;
+  filter: grayscale(70%);
 }
 
 .galerie img:hover {
-    filter: initial;
-    transform: scale(1.1);
-} 
+  filter: initial;
+  transform: scale(1.1);
+}
 
 /* Restaurant */
 
-.restau-horaires{
-    font-size: 1.2rem;
-    font-style: italic;
+.restau-horaires {
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
-.carte-restau{
-    border: thick double white;
+.carte-restau {
+  border: thick double white;
 }
 
-.hr-carte-restau{
-    background-color: white;
-    height: 1px;
-    margin: 3rem 5rem 5rem 5rem;
+.hr-carte-restau {
+  background-color: white;
+  height: 1px;
+  margin: 3rem 5rem 5rem 5rem;
 }
 
-.carte-restau p{
-    text-align: left;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+.carte-restau p {
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.carte-restau-prix{
-    font-size: 1.1rem !important;
-    font-style: italic;
-    color: var(--deep-gray);
+.carte-restau-prix {
+  font-size: 1.1rem !important;
+  font-style: italic;
+  color: var(--deep-gray);
 }
 
-.carte-description{
-    background-color: var(--light-gray);
-    margin: 2rem;
+.carte-description {
+  background-color: var(--light-gray);
+  margin: 2rem;
 }
-.carte-restau-ornement{
-    margin-bottom: 5rem;
-}
-
-.carte-restau h4{
-    color: white;
-    text-shadow: 0 0 2.8rem black;
-    margin-bottom: 2rem;
-    margin-top: 4rem;
+.carte-restau-ornement {
+  margin-bottom: 5rem;
 }
 
-.galerie-restau{
-    border: none;
+.carte-restau h4 {
+  color: white;
+  text-shadow: 0 0 2.8rem black;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.galerie-restau {
+  border: none;
 }
 
 /* Spa */
-.spa-fiche-generale{
-    background: linear-gradient(to right, var(--pale-gray), var(--light-white));
-    border-radius: 1rem;
-    box-shadow: .3rem .3rem .5rem gray;
-    margin-bottom: 4rem;
+.spa-fiche-generale {
+  background: linear-gradient(to right, var(--pale-gray), var(--light-white));
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem gray;
+  margin-bottom: 4rem;
 }
 
-.spa-fiche-image{
-    text-align: center;
+.spa-fiche-image {
+  text-align: center;
 }
 
-.spa-fiche-toggle-paragraph{
-    text-align: center;
-    color: var(--deep-gray);
+.spa-fiche-toggle-paragraph {
+  text-align: center;
+  color: var(--deep-gray);
+  font-weight: bold;
 }
 
-.spa-fiche-toggle1, .spa-fiche-toggle2, .spa-fiche-toggle3, .spa-fiche-toggle4, .spa-fiche-toggle5{
-    cursor: pointer;
+.spa-fiche-toggle1,
+.spa-fiche-toggle2,
+.spa-fiche-toggle3,
+.spa-fiche-toggle4,
+.spa-fiche-toggle5,
+.restau-fiche-toggle1,
+.restau-fiche-toggle2,
+.restau-fiche-toggle3 {
+  cursor: pointer;
 }
 
-.spa-fiche-toggle1:hover, .spa-fiche-toggle2:hover, .spa-fiche-toggle3:hover, .spa-fiche-toggle4:hover, .spa-fiche-toggle5:hover{
-    color: var(--red);
+.spa-fiche-toggle1:hover,
+.spa-fiche-toggle2:hover,
+.spa-fiche-toggle3:hover,
+.spa-fiche-toggle4:hover,
+.spa-fiche-toggle5:hover,
+.restau-fiche-toggle1:hover, 
+.restau-fiche-toggle2:hover,
+.restau-fiche-toggle3:hover {
+  color: var(--red);
 }
 
-.spa-fiche-contenu1, .spa-fiche-contenu2, .spa-fiche-contenu3, .spa-fiche-contenu4, .spa-fiche-contenu5{
-    display: none;
+.spa-fiche-contenu1,
+.spa-fiche-contenu2,
+.spa-fiche-contenu3,
+.spa-fiche-contenu4,
+.spa-fiche-contenu5,
+.restau-fiche-contenu1,
+.restau-fiche-contenu2,
+.restau-fiche-contenu3 {
+  display: none;
 }
 
-.spa-fiche-contenu1 .col-11, .spa-fiche-contenu2 .col-11, .spa-fiche-contenu3 .col-11, .spa-fiche-contenu4 .col-11, .spa-fiche-contenu5 .col-11{
-    text-align: justify;
+.spa-fiche-contenu1 .col-11,
+.spa-fiche-contenu2 .col-11,
+.spa-fiche-contenu3 .col-11,
+.spa-fiche-contenu4 .col-11,
+.spa-fiche-contenu5 .col-11 {
+  text-align: justify;
 }
 
-.spa-fiche-generale li{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.6rem;
+.spa-fiche-generale li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.6rem;
 }
 
 /* Réservations */
-.resa-background{
-    background: linear-gradient(to right, var(--pale-gray), var(--light-white));
-    border-radius: 1rem;
-    box-shadow: .3rem .3rem .5rem gray;
+.resa-background {
+  background: linear-gradient(to right, var(--pale-gray), var(--light-white));
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem gray;
 }
 
-.resa-zone{
-    padding: 4rem;
+.resa-zone {
+  padding: 4rem;
 }
 
-.resa-zone p{
-    margin-bottom: 2rem;
-    margin-top: 0;
+.resa-zone p {
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
-.bad-mail-confirmation{
-    background-color: rgba(212, 51, 51, 0.068);
-    border:  rgba(212, 51, 51, 0.548) solid 2px;
+.bad-mail-confirmation {
+  background-color: rgba(212, 51, 51, 0.068);
+  border: rgba(212, 51, 51, 0.548) solid 2px;
 }
 
-#from, #to{
-    width: 9rem;
+#from,
+#to {
+  width: 9rem;
 }
 
 /* Avis */
 
-#tabs{
-    border-radius: 1rem;
+#tabs {
+  border-radius: 1rem;
 }
 
-.ui-tabs-nav{
-    background: linear-gradient(to right, var(--pale-gray), var(--light-white));
+/* #tabs li{
+
+} */
+
+.ui-tabs-nav {
+  background: linear-gradient(to right, var(--pale-gray), var(--light-white));
 }
 
-.ui-tabs-tab{
-    background-color: var(--pale-gray) !important;
+.ui-tabs-tab {
+  background-color: var(--pale-gray) !important;
 }
 
-.ui-tabs-tab a{
-    color: var(--deep-gray) !important;
+.ui-tabs-tab a {
+  color: var(--deep-gray) !important;
+  /* font-size: 3rem; */
 }
 
-.ui-state-active{
-    border: black !important;
-    background-color: var(--deep-gray) !important;
+@media only screen and (max-width: 500px){
+    .ui-tabs-tab a {
+        font-size: 1.3rem;
+      }
 }
 
-.ui-state-active a{
-    color: white !important;
+@media only screen and (max-width: 412px){
+    .ui-tabs-tab a {
+        font-size: 1rem;
+      }
 }
 
-#tabs p{
-    margin-bottom: 0;
+.ui-state-active {
+  border: black !important;
+  background-color: var(--deep-gray) !important;
 }
 
-#tabs em{
-    font-style: italic;
+.ui-state-active a {
+  color: white !important;
 }
 
-.signature-commentaire{
-    text-align: right;
-    padding-right: 2rem;
-    margin-top: 0 !important;
-    margin-bottom: 3rem !important;
+#tabs p {
+  margin-bottom: 0;
+}
+
+#tabs em {
+  font-style: italic;
+}
+
+.signature-commentaire {
+  text-align: right;
+  padding-right: 2rem;
+  margin-top: 0 !important;
+  margin-bottom: 3rem !important;
 }
 
 /* Qui sommes-nous ? */
-.qui-sommes-nous p{
-    margin-bottom: 1rem;
+.qui-sommes-nous p {
+  margin-bottom: 1rem;
 }
 
-.qui-sommes-nous h2{
-    margin-top: 6rem;
+.qui-sommes-nous h2 {
+  margin-top: 6rem;
 }
 
-#newsletter{
-    padding: 0;
-    margin-bottom: 6rem;
+#newsletter {
+  padding: 0;
+  margin-bottom: 6rem;
 }
 
-#newsletter p{
-    text-align: center;
+#newsletter p {
+  text-align: center;
 }
 
-.newsletter{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: 570px;
-
+.newsletter {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 570px;
 }
 
 /* Accès */
-.google-map{
-    max-width: 90%;
-    margin-bottom: 3rem;
+.google-map {
+  max-width: 90%;
+  margin-bottom: 3rem;
 }
 
 /* Événements */
-.iframe-video{
-    margin-bottom: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: 80%;
+.iframe-video {
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 80%;
 }
 
 /* Presse */
-.presse-chapeau{
-    font-size: 2rem;
-    font-weight: bold;
+.presse-chapeau {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.presse-lire-suite{
-    font-weight: bold;
-    font-style: italic;
+.presse-lire-suite {
+  font-weight: bold;
+  font-style: italic;
 }
 
-.cadre-youtube{
-    max-width: 90%;
+.cadre-youtube {
+  max-width: 90%;
 }
 
 /* Actualité */
-.actualite-img{
-    padding-bottom: 1rem;
+.actualite-img {
+  padding-bottom: 1rem;
 }
 
-.actualite-breve{
-    margin-top: 0 !important;
-    height: 20rem;
+.actualite-breve {
+  margin-top: 0 !important;
+  height: 20rem;
 }
 
-.actualite-breve a, .mentions-legales a{
-    color: var(--deep-gray);
-    text-decoration: underline;
+.actualite-breve a,
+.mentions-legales a {
+  color: var(--deep-gray);
+  text-decoration: underline;
 }
 
-.actualite-encart{
-    border: white dashed 2px;
-    height: 30rem;
-    margin-bottom: 1rem;
+.actualite-encart {
+  border: white dashed 2px;
+  height: 30rem;
+  margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 440px){
-    .actualite-encart{
-        height: 45rem;
-    }
+@media only screen and (max-width: 440px) {
+  .actualite-encart {
+    height: 45rem;
+  }
 }
 
 /* Panier */
-#id-resa-panier a{
-    color: var(--deep-gray);
-    text-decoration: underline;
+#id-resa-panier a {
+  color: var(--deep-gray);
+  text-decoration: underline;
+}
+
+/* Avertissement page d'accueil */
+#covid-avertissement {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-bottom: white 0.1rem solid;
+}
+
+#ferme-avertissement {
+  text-align: right;
 }
