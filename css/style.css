@@ -498,6 +498,11 @@ footer hr {
       display: none;
     }
 
+    .degrade-bas-video-accueil{
+      /* display: none; */
+      z-index: -2;
+    }
+
   }
 
 /* Carrousel */
