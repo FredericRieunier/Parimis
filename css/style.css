@@ -1,3 +1,8 @@
+/* Des bugs m'ont été remontés, sur Safari en version mobile (un scroll horizontal et un bandeau gris au niveau du header).
+  J'ai tenté d'installer Safari mais il n'est plus mis à jour depuis 2018 et la version que j'ai pu télécharger interprétait visiblement de façon très datée le code.
+  Je n'ai donc malheureusement pas pu rectifier ces bugs.
+*/
+
 /*** Générique ***/
 *,
 *::before,
@@ -22,6 +27,7 @@ body {
   margin: 0 auto;
   margin: 0;
   color: black;
+  background-color: rgb(255, 250, 221);
 
   /* Définition des couleurs de la charte graphique */
   --deep-gray: hsl(0, 0%, 22%);
@@ -83,7 +89,7 @@ h1 {
   padding-top: 5rem;
   padding-bottom: 5rem;
   color: white;
-  background: linear-gradient(to bottom, black, black 60%, black 90%, transparent 95%);
+  background: linear-gradient(to bottom, black 60%, black 90%, transparent 95%);
   z-index: 1;
 }
 
@@ -171,7 +177,7 @@ h4 {
 /* Nav */
 nav {
   width: 100%;
-  background: linear-gradient(to bottom, black, black 60%, transparent 95%);
+  background: linear-gradient(to bottom, black, black 70%, transparent 95%);
 }
 
 .row-titre-parimis {
@@ -407,7 +413,7 @@ footer {
   text-align: center;
 }
 
-footer p {
+footer p, footer h3 {
   color: var(--pale-gray);
   text-align: center;
 }
@@ -475,7 +481,7 @@ footer hr {
 .degrade-bas-video-accueil {
   width: 100%;
   height: 15rem;
-  background: linear-gradient(to top, white 20%, white 40%, transparent);
+  background: linear-gradient(to top, rgb(255, 250, 221) 20%, rgb(255, 250, 221) 40%, transparent);
   position: relative;
   bottom: 10rem;
   z-index: 0;
