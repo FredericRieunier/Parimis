@@ -496,7 +496,7 @@ footer hr {
     /* Baisser le h1 en mobile */
     h1 {
         margin-top: 7rem;
-        background: white;
+        background: rgb(255, 250, 221);
         color: black;
     }
 
@@ -563,6 +563,14 @@ footer hr {
   transition: 0.5s;
   padding: 10px;
   filter: grayscale(70%);
+}
+
+@media only screen and (max-width: 991px){
+  .galerie img {
+    transition: 0.5s;
+    padding: 10px;
+    filter: none;
+  }
 }
 
 .galerie img:hover {

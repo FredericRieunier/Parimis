@@ -301,3 +301,17 @@ function champVide(formId, inputId){
 $('#ferme-avertissement').click(function(){
   $('#covid-avertissement').slideUp(1000);
 })
+
+// Alert indiquant que le site n'est pas encore dispo en anglais
+
+$('#language').click(function(){
+  if($('#language').val() == 'english'){
+    alert('This website will be available in English soon. Thank you for your patience.');
+  }
+})
+
+$('#language-mobile').click(function(){
+  if($('#language-mobile').val() == 'english'){
+    alert('This website will be available in English soon. Thank you for your patience.');
+  }
+})
