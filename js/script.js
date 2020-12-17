@@ -221,7 +221,7 @@ $('#id-avis-form').submit(function(event){
 })
 
 // Confirmation newsletter
-$('#newsletter').submit(function(event){
+$('#newsletter1').submit(function(event){
   event.preventDefault();
   if(!$('#mailNewsletter').val()){
   alert('Veuillez entrer votre adresse e-mail.');
